@@ -1,0 +1,183 @@
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    margin-bottom: 5rem;
+}
+
+.left {
+    min-width: 35rem;
+}
+
+.right {
+    min-width: 35rem;
+}
+
+.leftCard {
+    width: 25rem;
+}
+
+.rightCard {
+    width: 25rem;
+    float: right;
+}
+
+.mediaWrap {
+    border: 1px none;
+    border-radius: 2rem;
+}
+
+.rightTextCardContainer {
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leftTextCardContainer {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    letter-spacing: 0.025em;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+}
+
+.description {
+    width: 25rem;
+    font-size: 0.77rem;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+}
+
+.videoPlayer {
+    width: 22rem !important;
+    height: 400px !important;
+}
+
+/* single card css */
+.cardContainer {
+    display: flex;
+    justify-content: start;
+    padding-left: 22rem;
+}
+
+.centerTextCardContainer {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1080px) {
+    .right {
+        min-width: unset;
+    }
+
+    .description {
+        width: unset;
+    }
+
+    .left {
+        min-width: unset;
+    }
+
+    .leftCard {
+        width: unset;
+    }
+
+    .rightCard {
+        width: unset;
+    }
+
+    .tabContainer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .cardContainer {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .videoPlayer {
+        width: 18rem !important;
+    }
+}
+
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .right {
+        min-width: unset;
+    }
+
+    .description {
+        width: unset;
+    }
+
+    .left {
+        min-width: unset;
+        margin-top: unset;
+        padding: 2rem 0;
+    }
+
+    .leftCard {
+        width: unset;
+    }
+
+    .rightCard {
+        width: unset;
+        float: unset;
+    }
+
+    .tabContainer {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .cardContainer {
+        display: flex;
+        padding-left: 0rem;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-bottom: 27rem;
+    }
+
+    .leftTextCardContainer {
+        margin-right: unset;
+        margin-top: unset;
+        padding: 1rem;
+    }
+
+    .rightTextCardContainer {
+        margin-left: unset;
+        margin-top: unset;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .mediaWrap {
+        display: flex;
+        justify-content: center;
+    }
+    .videoPlayer {
+        width: 18rem !important;
+    }
+}

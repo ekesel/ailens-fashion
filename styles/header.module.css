@@ -1,0 +1,169 @@
+.topHeader {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.topHeader .container {
+    border-bottom: 1px solid #dedede;
+}
+
+.topHeader .row {
+    display: flex;
+    padding: 3rem 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topHeader .telephone {
+    width: 0.75rem;
+    height: 0.75rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/phone.png) no-repeat center;
+    background-size: contain;
+}
+
+.topHeader .location {
+    width: 0.75rem;
+    height: 0.75rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/location.png) no-repeat center;
+    background-size: contain;
+}
+
+.topHeader .dropdownMenu {
+    left: auto;
+    right: 0;
+    max-width: 300px;
+}
+
+@media (max-width: 480px) {
+    .topHeader .dropdownMenu {
+        right: 0;
+        left: 0;
+        max-width: 100%;
+    }
+}
+
+.topHeader .rowItemWrap {
+    color: #333;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.topHeader .heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.topHeader .iconRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 1rem 0;
+    gap: 2rem;
+}
+
+.topHeader .linkedIn {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/linkedin.png) no-repeat center;
+    background-size: contain;
+}
+
+.topHeader .twitter {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/twitter.png) no-repeat center;
+    background-size: contain;
+}
+
+.topHeader .facebook {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/facebook.png) no-repeat center;
+    background-size: contain;
+}
+
+.topHeader .instagram {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    overflow: hidden;
+    align-self: center;
+    background: url(../images/icons/instagram.png) no-repeat center;
+    background-size: contain;
+}
+
+@media (max-width: 480px) {
+    .topHeader .rowItemWrap {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .topHeader .rowItemWrap {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.topHeader .rowItemWrap i {
+    margin-right: 4px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+    .topHeader .logo {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topHeader .logo {
+        padding: 10px;
+    }
+}
+
+.topHeader .logo a {
+    display: inline-block;
+}
+
+/* tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1080px)  {
+    .topHeader {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .topHeader .row {
+        gap: 1.5rem;
+    }
+}
+
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .topHeader {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .topHeader .row {
+        gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .mobileText {
+        font-size: 0.7rem;
+    }
+}
