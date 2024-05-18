@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import CarouselWrap from '../components/CarouselWrap';
 import SubHeading from '../components/SubHeading';
 import CardSet from '../components/CardSet';
 import Card from '../components/Card';
 import data from '../data.json';
 import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
+import FashionBanner from '../components/FashionBanner';
 
 export default function Home() {
   const [isMobileView, setIsMobileView] = useState(false)
@@ -34,7 +34,7 @@ export default function Home() {
         socialMedia={data?.header?.socialMedia}
       />
       <NavBar />
-      <CarouselWrap carouselImages={data?.carouselImages} />
+      <FashionBanner />
       <SubHeading subHeadingSubTitle={data?.subHeadingSubTitle} subHeadingTitle={data?.subHeadingTitle} idKey={data?.subHeadingKey} />
       <CardSet data={data?.cardset1} position={isMobileView ? 'right' : data?.cardset1?.mediaCardPosition} productLink={data?.productLink} />
       <CardSet data={data?.cardset2} position={isMobileView ? 'right' : data?.cardset2?.mediaCardPosition} productLink={data?.productLink} />
