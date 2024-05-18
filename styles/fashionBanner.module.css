@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    margin-bottom: 5rem;
+    background-color: #cdb5ff;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensures the child spans the full height of the parent */
+    width: 100%;
+    /* Ensures the child spans the full width of the parent */
+    position: absolute;
+    /* Ensure it centers within any positioned parent */
+    top: 0;
+    left: 0;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    /* Adjust the size as needed */
+    text-align: center;
+}
+
+/* Media queries for mobile and tablet */
+
+/* Mobile devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    .container {
+        min-height: 700px;
+        margin-bottom: 3rem;
+        /* Decrease margin for mobile */
+        padding: 1rem;
+        /* Add padding to container for mobile */
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        flex-direction: column;
+        /* Change flex direction to column for mobile */
+        gap: 0.5rem;
+        /* Decrease gap for mobile */
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .center {
+        top: unset;
+        left: unset;
+        position: unset;
+    }
+
+    /* Additional styles for .center and .text can be added if needed */
+}
+
+/* Tablet devices (768px - 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        min-height: 600px;
+        /* Increase minimum height for tablets */
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .center {
+        top: unset;
+        left: unset;
+        position: unset;
+    }
+
+
+    /* Additional styles for .center and .text can be added if needed */
+}

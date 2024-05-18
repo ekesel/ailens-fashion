@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const AnimatedTextCharacter = ({ text, staggerRate, delayRate }) => {
-// splitting text into letters
+  // splitting text into letters
   const letters = Array.from(text);
 
   // Variants for Container
@@ -14,7 +14,7 @@ const AnimatedTextCharacter = ({ text, staggerRate, delayRate }) => {
     }),
   };
 
-// Variants for each letter
+  // Variants for each letter
   const child = {
     visible: {
       opacity: 1,
@@ -38,9 +38,14 @@ const AnimatedTextCharacter = ({ text, staggerRate, delayRate }) => {
     },
   };
 
+  useEffect(() => {
+    // This useEffect can handle any side-effects if needed when text changes
+  }, [text]);
+
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex"}}
+      key={text} // Ensure the key prop changes when text changes
+      style={{ overflow: "hidden", display: "flex" }}
       variants={container}
       initial="hidden"
       animate="visible"

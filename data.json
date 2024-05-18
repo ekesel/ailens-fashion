@@ -13,11 +13,29 @@
             "instagram": "https://www.instagram.com/"
         }
     },
-    "carouselImages": [
-        "/images/slider-1.jpg",
-        "/images/slider-2.jpg",
-        "/images/slider-3.jpg"
-    ],
+    "banner": {
+        "leftImages": [
+            "/images/w_image1.svg",
+            "/images/w_image2.svg",
+            "/images/w_image3.svg",
+            "/images/w_image4.svg",
+            "/images/w_image5.svg"
+        ],
+        "rightImages": [
+            "/images/w_image5.svg",
+            "/images/w_image4.svg",
+            "/images/w_image3.svg",
+            "/images/w_image2.svg",
+            "/images/w_image1.svg"
+        ],
+        "texts":  [
+            "AI-Powered Style Recommendations",
+            "Virtual Fashion Assistants",
+            "Smart Fabric Technology",
+            "Customized Fashion Designs",
+            "AI-Driven Trend Analysis"
+        ]
+    },
     "subHeadingTitle": "OUR PRODUCTS",
     "subHeadingSubTitle": "Elevate your AI experience: explore our suite of virtual solutions.",
     "subHeadingKey": "products",
@@ -67,7 +85,7 @@
         "textCardTitle": "What is AI-LENS?",
         "position": "left",
         "textCardp1": "Employing sophisticated algorithms, we intricately enhance safety compliance measures, ensuring a notable improvement in overall workplace safety across industries like manufacturing, construction, and mining.",
-        "textCardp2":"These advanced systems contribute to a heightened level of operational safety, adhering rigorously to regulations and minimizing risks in diverse work environments."
+        "textCardp2": "These advanced systems contribute to a heightened level of operational safety, adhering rigorously to regulations and minimizing risks in diverse work environments."
     },
     "aboutCard2": {
         "key": "what_service_ai_lens",

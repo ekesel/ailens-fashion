@@ -34,7 +34,7 @@ export default function Home() {
         socialMedia={data?.header?.socialMedia}
       />
       <NavBar />
-      <FashionBanner />
+      <FashionBanner banner={data?.banner} />
       <SubHeading subHeadingSubTitle={data?.subHeadingSubTitle} subHeadingTitle={data?.subHeadingTitle} idKey={data?.subHeadingKey} />
       <CardSet data={data?.cardset1} position={isMobileView ? 'right' : data?.cardset1?.mediaCardPosition} productLink={data?.productLink} />
       <CardSet data={data?.cardset2} position={isMobileView ? 'right' : data?.cardset2?.mediaCardPosition} productLink={data?.productLink} />
