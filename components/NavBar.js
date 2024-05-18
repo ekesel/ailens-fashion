@@ -12,7 +12,7 @@ const NavBar = () => {
     <nav className={`${styles.fill}`}>
       <ul>
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/#about_us_page">About</Link></li>
+        <li><Link href="/about">About</Link></li>
         <li>
           <Dropdown>
             <DropdownTrigger>

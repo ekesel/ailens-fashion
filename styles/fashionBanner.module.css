@@ -22,11 +22,6 @@
     height: 100%;
     /* Ensures the child spans the full height of the parent */
     width: 100%;
-    /* Ensures the child spans the full width of the parent */
-    position: absolute;
-    /* Ensure it centers within any positioned parent */
-    top: 0;
-    left: 0;
 }
 
 .text {

@@ -117,5 +117,31 @@
         "errorBtnText": "Try Again :(",
         "errorTitle": "Uh - Oh!",
         "errorText": "We encountered some error while sending your thoughts, Try Again or mail us at aivision@ai-lens.ai"
+    },
+    "selector": {
+        "person_images": [
+            "/images/w_image1.svg",
+            "/images/w_image2.svg",
+            "/images/w_image3.svg",
+            "/images/w_image4.svg",
+            "/images/w_image5.svg",
+            "/images/w_image1.svg",
+            "/images/w_image2.svg",
+            "/images/w_image3.svg",
+            "/images/w_image4.svg",
+            "/images/w_image5.svg"
+        ],
+        "dress_images": [
+            "/images/w_image1.svg",
+            "/images/w_image2.svg",
+            "/images/w_image3.svg",
+            "/images/w_image4.svg",
+            "/images/w_image5.svg",
+            "/images/w_image1.svg",
+            "/images/w_image2.svg",
+            "/images/w_image3.svg",
+            "/images/w_image4.svg",
+            "/images/w_image5.svg"
+        ]
     }
 }

@@ -168,7 +168,7 @@ const Footer = ({ contactData, socialMedia }) => {
                     </div>
                     <ul className={styles.menu}>
                         <li className={styles.menu__item}><Link className={styles.menu__link} href="/">Home</Link></li>
-                        <li className={styles.menu__item}><Link className={styles.menu__link} href="/#about_us_page" >About</Link></li>
+                        <li className={styles.menu__item}><Link className={styles.menu__link} href="/about" >About</Link></li>
                         <li className={styles.menu__item}>
                             <Link className={styles.menu__link} href="/#products" scroll={false}>Products</Link></li>
                     </ul>
