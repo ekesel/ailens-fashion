@@ -28,7 +28,7 @@
             "/images/w_image2.svg",
             "/images/w_image1.svg"
         ],
-        "texts":  [
+        "texts": [
             "AI-Powered Style Recommendations",
             "Virtual Fashion Assistants",
             "Smart Fabric Technology",
@@ -142,6 +142,33 @@
             "/images/w_image3.svg",
             "/images/w_image4.svg",
             "/images/w_image5.svg"
-        ]
+        ],
+        "selected_image": {
+            "/images/w_image1.svg_/images/w_image1.svg": "/images/w_image5.svg",
+            "/images/w_image1.svg_/images/w_image2.svg": "/images/w_image4.svg",
+            "/images/w_image1.svg_/images/w_image3.svg": "/images/w_image3.svg",
+            "/images/w_image1.svg_/images/w_image4.svg": "/images/w_image2.svg",
+            "/images/w_image1.svg_/images/w_image5.svg": "/images/w_image1.svg",
+            "/images/w_image2.svg_/images/w_image1.svg": "/images/w_image5.svg",
+            "/images/w_image2.svg_/images.w_image2.svg": "/images/w_image4.svg",
+            "/images/w_image2.svg_/images/w_image3.svg": "/images/w_image3.svg",
+            "/images/w_image2.svg_/images/w_image4.svg": "/images/w_image2.svg",
+            "/images/w_image2.svg_/images/w_image5.svg": "/images/w_image1.svg",
+            "/images/w_image3.svg_/images/w_image1.svg": "/images/w_image5.svg",
+            "/images/w_image3.svg_/images/w_image2.svg": "/images/w_image4.svg",
+            "/images/w_image3.svg_/images/w_image3.svg": "/images/w_image3.svg",
+            "/images/w_image3.svg_/images/w_image4.svg": "/images/w_image2.svg",
+            "/images/w_image3.svg_/images/w_image5.svg": "/images/w_image1.svg",
+            "/images/w_image4.svg_/images/w_image1.svg": "/images/w_image5.svg",
+            "/images/w_image4.svg_/images/w_image2.svg": "/images/w_image4.svg",
+            "/images/w_image4.svg_/images/w_image3.svg": "/images/w_image3.svg",
+            "/images/w_image4.svg_/images/w_image4.svg": "/images/w_image2.svg",
+            "/images/w_image4.svg_/images/w_image5.svg": "/images/w_image1.svg",
+            "/images/w_image5.svg_/images/w_image1.svg": "/images/w_image5.svg",
+            "/images/w_image5.svg_/images/w_image2.svg": "/images/w_image4.svg",
+            "/images/w_image5.svg_/images/w_image3.svg": "/images/w_image3.svg",
+            "/images/w_image5.svg_/images/w_image4.svg": "/images/w_image2.svg",
+            "/images/w_image5.svg_/images/w_image5.svg": "/images/w_image1.svg"
+        }
     }
 }

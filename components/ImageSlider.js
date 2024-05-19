@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/imageSlider.module.css'; // Import your CSS module for styling
 
-const ImageSlider = ({ images, onClickFunc, selectedImage, key }) => {
+const ImageSlider = ({ images, onClickFunc, selectedImage, propKey }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
 
   const handleClickPrev = () => {
@@ -23,7 +23,7 @@ const ImageSlider = ({ images, onClickFunc, selectedImage, key }) => {
   }, [images.length]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={propKey}>
       <button className={styles.arrowButton} onClick={handleClickPrev}>&#10548;</button>
       <div className={styles.imageContainer}>
         {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
@@ -34,7 +34,7 @@ const ImageSlider = ({ images, onClickFunc, selectedImage, key }) => {
             className={selectedImage === image ? `${styles.image} ${styles.imageActive}` : styles.image}
             onClick={(e)=> {
                 e.preventDefault();
-                onClickFunc(image, key);
+                onClickFunc(image, propKey);
             }}
           />
         ))}
