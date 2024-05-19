@@ -45,13 +45,13 @@
 }
 
 .arrowButton {
-    width: 100%;
     font-size: 24px;
     cursor: pointer;
     border: none;
     background-color: white;
     padding: 1rem;
 }
+
 
 /* Media queries for mobile and tablet */
 
