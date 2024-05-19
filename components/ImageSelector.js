@@ -7,6 +7,7 @@ const ImageSelector = ({ selector }) => {
     const [selectedPerson, setSelectedPerson] = useState(selector?.person_images?.[0]);
     const [selectedDress, setSelectedDress] = useState(selector?.dress_images?.[0]);
     const [selectedCombo, setSelectedCombo] = useState(null);
+    const [isMobileView, setIsMobileView] = useState(false)
 
     const selectEntity = (image, key) => {
         if (key == 'person') {
@@ -17,9 +18,21 @@ const ImageSelector = ({ selector }) => {
         }
     };
 
+    // check mobile view
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 767px)')
+        if (mediaQuery.matches) {
+            setIsMobileView(true)
+        }
+        else
+            setIsMobileView(false)
+    }, [])
+
+
 
     useEffect(() => {
         const key = `${selectedPerson}_${selectedDress}`
+        console.log(key);
         if (key) {
             setSelectedCombo(selector?.selected_image?.[key])
         }
@@ -30,7 +43,7 @@ const ImageSelector = ({ selector }) => {
             <div className={styles.container}>
                 <div className={styles.row}>
                     <div className={styles.left}>
-                        <ImageSlider propKey={'person'} images={selector?.person_images} onClickFunc={selectEntity} selectedImage={selectedPerson} />
+                        <ImageSlider propKey={'person'} images={selector?.person_images} onClickFunc={selectEntity} selectedImage={selectedPerson} numberToShow={isMobileView ? 1 : 3} />
                     </div>
                     <div className={styles.center}>
                         <img
@@ -39,10 +52,10 @@ const ImageSelector = ({ selector }) => {
                             alt={`Image ${selectedCombo}`}
                             className={styles.image}
                         />
-                        <span className={styles.textImage}><AnimatedTextCharacter text={'Explore Your Style: Try on Any Dress with Just a Click!! :)'} staggerRate={0.2} delayRate={0.23} /></span>
+                        <span className={styles.textImage}><AnimatedTextCharacter text={'Explore Your Style: Try on Any Dress with Just a Click! :)'} staggerRate={0.2} delayRate={0.23} /></span>
                     </div>
                     <div className={styles.right}>
-                        <ImageSlider propKey={'dress'} images={selector?.dress_images} onClickFunc={selectEntity} selectedImage={selectedDress} />
+                        <ImageSlider propKey={'dress'} images={selector?.dress_images} onClickFunc={selectEntity} selectedImage={selectedDress} numberToShow={isMobileView ? 1 : 3} />
                     </div>
                 </div>
             </div>

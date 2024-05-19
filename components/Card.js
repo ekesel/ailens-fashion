@@ -26,7 +26,7 @@ const Card = ({ data }) => {
             viewport={{ once: true, amount: 0.8 }}
         >
             <div id={data?.key}>
-                <motion.div className={styles.cardContainer} variants={cardVariants}>
+                <motion.div className={data?.position == "center" ? styles.centerCardContainer : styles.cardContainer} variants={cardVariants}>
                     <span className={styles.cardTitle}>{data?.card_title}</span>
                     <div className={styles.cardBody}>
                         <TextCard position={data?.position}

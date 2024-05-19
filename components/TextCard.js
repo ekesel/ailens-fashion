@@ -15,9 +15,9 @@ const TextCard = (props) => {
   return (
     <div className={getStyleFromPosition(props?.position)}>
       <span className={styles.title}>{props?.textCardTitle}</span>
-      <p className={styles.description}>{props?.textCardp1}</p>
-      {props?.textCardp2 && <p className={styles.description}>{props?.textCardp2}</p>}
-      {props?.textCardp3 && <p className={styles.description}>{props?.textCardp3}</p>}
+      <p className={props?.position == "center" ? styles.centerDescription  : styles.description}>{props?.textCardp1}</p>
+      {props?.textCardp2 && <p className={props?.position == "center" ? styles.centerDescription  : styles.description}>{props?.textCardp2}</p>}
+      {props?.textCardp3 && <p className={props?.position == "center" ? styles.centerDescription  : styles.description}>{props?.textCardp3}</p>}
     </div>
   )
 }

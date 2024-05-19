@@ -83,21 +83,21 @@
     "aboutCard1": {
         "key": "what_is_ai_lens",
         "textCardTitle": "What is AI-LENS?",
-        "position": "left",
+        "position": "center",
         "textCardp1": "Employing sophisticated algorithms, we intricately enhance safety compliance measures, ensuring a notable improvement in overall workplace safety across industries like manufacturing, construction, and mining.",
         "textCardp2": "These advanced systems contribute to a heightened level of operational safety, adhering rigorously to regulations and minimizing risks in diverse work environments."
     },
     "aboutCard2": {
         "key": "what_service_ai_lens",
         "textCardTitle": "What services does AI-LENS offer?",
-        "position": "left",
+        "position": "center",
         "textCardp1": "AI-LENS can provide safety solutions in a wide range of industries, helping to enhance worker safety, protect assets, and prevent accidents.",
         "textCardp2": "In various industries such as manufacturing, construction, and oil and gas, the integration of artificial intelligence has proven instrumental in enhancing safety measures and operational efficiency. In manufacturing, AI systems monitor equipment for malfunctions, ensure worker safety compliance, and optimize production processes to minimize workplace accidents.",
         "textCardp3": "Similarly, in construction, AI analyzes sites for safety compliance, identifies potential hazards, and tracks the movement of workers and heavy machinery to prevent accidents. In the oil and gas sector, AI technologies monitor pipelines, drilling operations, and refineries for safety adherence, detect gas leaks, and predict equipment failures, thereby preempting catastrophic accidents."
     },
     "aboutCard3": {
         "key": "what_sets_apart_ai_lens",
-        "position": "left",
+        "position": "center",
         "textCardTitle": "What sets AI-LENS apart from its competitors?",
         "textCardp1": "By seamlessly integrating with existing cameras within facilities, AI-LENS  enabling early identification of potential hazards and preventing incidents before they occur."
     },
