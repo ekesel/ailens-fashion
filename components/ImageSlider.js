@@ -17,19 +17,11 @@ const ImageSlider = ({ images, onClickFunc, selectedImage, propKey, numberToShow
     return [...images, ...images].slice(currentIndex, end);
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeout(() => {
-        handleClickNext();
-      }, 2000); // duration of shrinkIn animation
-    }, 6000); // interval between image changes
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <div className={styles.container} key={propKey}>
-      <button className={styles.arrowButton} onClick={handleClickPrev}>&#10548;</button>
+      <div className={styles.arrowButton}>
+        <div className={styles.upArrowButton} onClick={handleClickPrev}></div>
+      </div>
       <div className={styles.imageContainer}>
         {getDisplayImages().map((image, index) => (
           <img
@@ -37,14 +29,16 @@ const ImageSlider = ({ images, onClickFunc, selectedImage, propKey, numberToShow
             src={image}
             alt={`Image ${index}`}
             className={selectedImage === image ? `${styles.image} ${styles.imageActive}` : styles.image}
-            onClick={(e)=> {
-                e.preventDefault();
-                onClickFunc(image, propKey);
+            onClick={(e) => {
+              e.preventDefault();
+              onClickFunc(image, propKey);
             }}
           />
         ))}
       </div>
-      <button className={styles.arrowButton} onClick={handleClickNext}>&#10549;</button>
+      <div className={styles.arrowButton}>
+        <div className={styles.downArrowButton} onClick={handleClickNext}></div>
+      </div>
     </div>
   );
 };

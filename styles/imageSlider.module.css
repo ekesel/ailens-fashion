@@ -32,26 +32,39 @@
 .image:hover {
     transform: scale(1.1) rotateY(10deg);
     /* Apply 3D effect on hover */
-    box-shadow: 0 10px 20px #cdb5ff;
+    box-shadow: 0 10px 20px #cdb5ffbf;
     /* Enhanced shadow on hover */
 }
 
 .imageActive {
-    background-color: #cdb5ff;
+    background-color: #cdb5ffbf;
     transform: scale(1.1) rotateY(10deg);
     /* Enlarge and slightly rotate active image for 3D effect */
-    box-shadow: 0 10px 20px #cdb5ff;
+    box-shadow: 0 10px 20px #cdb5ffbf;
     /* Enhanced shadow for active image */
 }
 
 .arrowButton {
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background-color: white;
     padding: 1rem;
 }
 
+.upArrowButton {
+    background: url(../public/images/up_arrow.svg) no-repeat center center;
+    background-size: contain; /* Ensure the image fits within the element */
+    width: 2rem; /* Adjust the width as needed */
+    height: 2rem; /* Adjust the height as needed */
+    cursor: pointer;
+    display: inline-block; /* Ensure the element respects width and height settings */
+}
+
+.downArrowButton {
+    background: url(../public/images/down_arrow.svg) no-repeat center center;
+    background-size: contain; /* Ensure the image fits within the element */
+    width: 2rem; /* Adjust the width as needed */
+    height: 2rem; /* Adjust the height as needed */
+    cursor: pointer;
+    display: inline-block; /* Ensure the element respects width and height settings */
+}
 
 /* Media queries for mobile and tablet */
 
@@ -65,10 +78,7 @@
         flex-direction: row;
         width: 200px;
         height: 200px;
-    }
-
-    .arrowButton {
-        font-size: 12px;
+        justify-content: center;
     }
 
     .image {

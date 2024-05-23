@@ -12,7 +12,7 @@ const FashionBanner = ({ banner }) => {
                 </div>
                 <div className={styles.center}>
                     <span className={styles.text}>
-                        <TextRotator texts={banner?.texts} staggerRate={0.2} delayRate={0.23} interval={8000} />
+                        <TextRotator texts={banner?.texts} staggerRate={0.1} delayRate={0.23} interval={8000} />
                     </span>
                 </div>
                 <div className={styles.right}>

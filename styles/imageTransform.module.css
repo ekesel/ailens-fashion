@@ -1,54 +1,42 @@
-/* ImageTransform.css */
-@keyframes shrinkInn {
+@keyframes fadeOut {
   0% {
-    transform: scale(1);
     opacity: 1;
   }
-
   100% {
-    transform: scale(0.5);
     opacity: 0;
   }
 }
 
-@keyframes shrinkOutt {
+@keyframes fadeIn {
   0% {
-    transform: scale(0.5);
     opacity: 0;
   }
-
   100% {
-    transform: scale(1);
     opacity: 1;
   }
 }
 
 .imageContainer {
   position: relative;
-  width: 400px;
-  /* Adjust size as needed */
-  height: 400px;
-  /* Adjust size as needed */
-  overflow: hidden;
-  /* Ensure the image doesn't overflow the container */
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
 }
 
 .image {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: opacity 1s, transform 1s;
+  transition: opacity 1s;
 }
 
-.shrinkIn {
-  animation: shrinkInn 1s forwards;
+.fadeOut {
+  animation: fadeOut 1s forwards;
 }
 
-.shrinkOut {
-  animation: shrinkOutt 1s forwards;
+.fadeIn {
+  animation: fadeIn 1s forwards;
 }
-
-
 
 /* Mobile devices (up to 767px) */
 @media only screen and (max-width: 767px) {
@@ -56,8 +44,6 @@
     width: 200px;
     height: 250px;
   }
-
-  /* Additional styles for .center and .text can be added if needed */
 }
 
 /* Tablet devices (768px - 1023px) */
@@ -65,6 +51,4 @@
   .imageContainer {
     width: 200px;
   }
-
-  /* Additional styles for .center and .text can be added if needed */
 }

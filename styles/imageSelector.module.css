@@ -1,6 +1,6 @@
 .section {
     /* Set the background to a gradient from the specified color to transparent */
-    background: linear-gradient(to top, #cdb5ff, transparent);
+    background: linear-gradient(to top, #cdb5ffbf, transparent);
     /* Set the background size to cover the entire element */
     background-size: 100% 100%;
     /* Ensure the background starts from the top and fills the entire element */
@@ -55,9 +55,7 @@
 }
 
 .image:hover {
-    transform: scale(1.1) rotateY(10deg);
-    /* Apply 3D effect on hover */
-    box-shadow: 0 10px 20px #cdb5ff;
+    box-shadow: 0 10px 20px #cdb5ffbf;
     /* Enhanced shadow on hover */
 }
 
@@ -65,6 +63,57 @@
     font-weight: 600;
 }
 
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animateInLeft {
+    animation: slideInLeft 1s forwards;
+}
+
+.animateInRight {
+    animation: slideInRight 1s forwards;
+}
 
 /* Media queries for mobile and tablet */
 
@@ -89,6 +138,14 @@
 
     .section {
         height: unset;
+    }
+
+    .animateInLeft {
+        animation: slideInBottom 1s forwards;
+    }
+    
+    .animateInRight {
+        animation: slideInTop 1s forwards;
     }
 }
 
