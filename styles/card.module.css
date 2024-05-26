@@ -170,6 +170,11 @@
         gap: 2rem;
         width: 100%;
     }
+
+    .centerTextCardContainer {
+        width: unset;
+        padding: 2rem;
+    }
 }
 
 /* mobile */
@@ -237,12 +242,22 @@
     .videoPlayer {
         width: 18rem !important;
     }
+
+    .centerTextCardContainer {
+        width: unset;
+        padding: 2rem;
+    }
 }
 
 
 /* Tablet devices (768px - 1023px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .cardContainer {
+        padding: 2rem;
+    }
+
+    .centerTextCardContainer {
+        width: unset;
         padding: 2rem;
     }
 
