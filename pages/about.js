@@ -33,7 +33,7 @@ export default function Home() {
         socialMedia={data?.header?.socialMedia}
       />
       <NavBar />
-      <FashionBanner banner={data?.banner} />
+      <FashionBanner personDetails={data?.personDetails} interval={6000} />
       <SubHeading subHeadingSubTitle={data?.about_us_subtitle} subHeadingTitle={data?.about_us_title} idKey={"about_us_page"} />
       <Card data={data?.aboutCard1} key={data?.aboutCard1?.key} />
       <Card data={data?.aboutCard2} key={data?.aboutCard2?.key} />
