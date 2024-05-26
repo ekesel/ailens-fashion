@@ -1,17 +1,12 @@
 .container {
     display: flex;
     justify-content: center;
-    max-height: 400px;
     margin-bottom: 5rem;
+    max-height: 500px;
+    gap: 6rem;
+    align-items: center;
 }
 
-.left {
-    min-width: 35rem;
-}
-
-.right {
-    min-width: 35rem;
-}
 
 .leftCard {
     width: 25rem;
@@ -19,7 +14,6 @@
 
 .rightCard {
     width: 25rem;
-    float: right;
 }
 
 .mediaWrap {
@@ -36,7 +30,6 @@
 }
 
 .leftTextCardContainer {
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -51,7 +44,7 @@
 
 .description {
     width: 25rem;
-    font-size: 0.77rem;
+    font-size: 1rem;
     letter-spacing: 0.025em;
     font-weight: 400;
 }
@@ -65,6 +58,13 @@
 .videoPlayer {
     width: 22rem !important;
     height: 400px !important;
+}
+
+.image {
+    transition: transform 0.6s;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
 }
 
 /* single card css */
@@ -88,6 +88,34 @@
     gap: 1rem;
     width: 1000px;
 }
+
+
+@keyframes flipIn {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+}
+
+@keyframes flipOut {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-enter {
+    animation: flipIn 0.6s forwards;
+}
+
+.flip-exit {
+    animation: flipOut 0.6s forwards;
+}
+
 
 /* tablet */
 @media only screen and (min-device-width : 767px) and (max-device-width : 1080px) {
@@ -157,7 +185,6 @@
     .left {
         min-width: unset;
         margin-top: unset;
-        padding: 2rem 0;
     }
 
     .leftCard {
@@ -186,12 +213,14 @@
     .container {
         flex-direction: column;
         margin-bottom: 27rem;
+        gap: 2rem;
     }
 
     .leftTextCardContainer {
         margin-right: unset;
         margin-top: unset;
-        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .rightTextCardContainer {

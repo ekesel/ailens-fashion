@@ -43,12 +43,6 @@ const Footer = ({ contactData, socialMedia }) => {
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.waves}>
-                <div className={styles.wave1}></div>
-                <div className={styles.wave2}></div>
-                <div className={styles.wave3}></div>
-                <div className={styles.wave4}></div>
-            </div>
             <div className={styles.container} id={contactData?.key}>
                 {(formSubmitted == true && formError == false) ? <div className={styles.contactSuccess}>
                     <span className={styles.contactTitle}>{contactData?.responseTitle}</span>
@@ -169,8 +163,6 @@ const Footer = ({ contactData, socialMedia }) => {
                     <ul className={styles.menu}>
                         <li className={styles.menu__item}><Link className={styles.menu__link} href="/">Home</Link></li>
                         <li className={styles.menu__item}><Link className={styles.menu__link} href="/about" >About</Link></li>
-                        <li className={styles.menu__item}>
-                            <Link className={styles.menu__link} href="/#products" scroll={false}>Products</Link></li>
                     </ul>
                     <p className={styles.copyright}>&copy; 2024 AI Lens | All Rights Reserved</p>
                     <p className={styles.credits}>Site Developed By <Link href={'https://www.linkedin.com/in/ekesel/'} rel="noopener noreferrer" target="_blank">@ekesel</Link> and <Link href={'https://www.linkedin.com/in/aryanagr/'} rel="noopener noreferrer" target="_blank">@aryanagr</Link></p>

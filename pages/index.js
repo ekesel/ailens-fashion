@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import SubHeading from '../components/SubHeading';
 import CardSet from '../components/CardSet';
-import Card from '../components/Card';
 import data from '../data.json';
 import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
 import FashionBanner from '../components/FashionBanner';
-import ImageSelector from '../components/ImageSelector';
+import VirtualTryOn from '../components/VirtualTryOn';
+import TitleWithBulletPoints from '../components/TitleWithBulletPoints';
+
 
 export default function Home() {
   const [isMobileView, setIsMobileView] = useState(false)
@@ -35,13 +35,15 @@ export default function Home() {
         socialMedia={data?.header?.socialMedia}
       />
       <NavBar />
-      <FashionBanner banner={data?.banner} />
-      <SubHeading subHeadingSubTitle={data?.subHeadingSubTitle} subHeadingTitle={data?.subHeadingTitle} idKey={data?.subHeadingKey} />
-      <CardSet data={data?.cardset1} position={isMobileView ? 'right' : data?.cardset1?.mediaCardPosition} productLink={data?.productLink} />
-      <CardSet data={data?.cardset2} position={isMobileView ? 'right' : data?.cardset2?.mediaCardPosition} productLink={data?.productLink} />
-      <CardSet data={data?.cardset3} position={isMobileView ? 'right' : data?.cardset3?.mediaCardPosition} productLink={data?.productLink} />
-      <CardSet data={data?.cardset4} position={isMobileView ? 'right' : data?.cardset4?.mediaCardPosition} productLink={data?.productLink} />
-      <ImageSelector selector={data?.selector} />
+      <FashionBanner personDetails={data?.personDetails} interval={6000} />
+      <CardSet data={data?.cardset1} position={data?.cardset1?.mediaCardPosition} />
+      <VirtualTryOn personDetails={data?.personDetails} selectedImage={data?.selected_image} />
+      <TitleWithBulletPoints 
+        title={data?.why_vton?.title}
+        description={data?.why_vton?.description}
+        bulletPoints={data?.why_vton?.bulletPoints}
+        imageSrc={data?.why_vton?.imageSrc}
+      />
       <Footer contactData={data?.contact} socialMedia={data?.header?.socialMedia} />
     </div>
   );

@@ -13,70 +13,23 @@
             "instagram": "https://www.instagram.com/"
         }
     },
-    "banner": {
-        "leftImages": [
-            "/images/w_image1.svg",
-            "/images/w_image2.svg",
-            "/images/w_image3.svg",
-            "/images/w_image4.svg",
-            "/images/w_image5.svg"
-        ],
-        "rightImages": [
-            "/images/w_image5.svg",
-            "/images/w_image4.svg",
-            "/images/w_image3.svg",
-            "/images/w_image2.svg",
-            "/images/w_image1.svg"
-        ],
-        "texts": [
-            "AI-Powered Style Recommendations",
-            "Virtual Fashion Assistants",
-            "Smart Fabric Technology",
-            "Customized Fashion Designs",
-            "AI-Driven Trend Analysis"
-        ]
-    },
     "subHeadingTitle": "OUR PRODUCTS",
     "subHeadingSubTitle": "Elevate your AI experience: explore our suite of virtual solutions.",
     "subHeadingKey": "products",
     "cardset1": {
-        "key": "ppe_detection",
-        "mediaCardPosition": "left",
-        "mediaCardType": "video",
-        "mediaCardSrc": "/videos/card1.mp4",
-        "textCardTitle": "PPE Detection",
-        "textCardp1": "AI-Lens uses advanced computer vision techniques for real time monitoring of PPE kit detection. It enhances workplace safety by automating the identification of correct gear usage and ensuring compliance, reducing the risk of accidents and injuries.",
-        "textCardp2": "Detect usage of Personal Fall Arrest System is used (PFAS) like a full body harness for wok-sites that are situated at heights along with other anti-fall protective gear.",
-        "textCardp3": "The compliance of head-mounted industrial PPE by using deep learning object detectors"
-    },
-    "cardset2": {
-        "key": "zone_management",
+        "key": "person_dress_combined",
         "mediaCardPosition": "right",
         "mediaCardType": "image",
-        "mediaCardSrc": "/images/zone_management.jpg",
-        "textCardTitle": "Zone Management",
-        "textCardp1": "Efficient parking management guides drivers to available spaces, reducing congestion. Occupancy sensors streamline building navigation by communicating real-time space utilization.",
-        "textCardp2": "Machine area control, facilitated by AI-LENS, ensures safe distances between workers and machinery. Enforcing worker counts in designated areas enhances safety, especially for lone workers facing unique hazards.",
-        "textCardp3": "AI-based intrusion detection monitors restricted zones, triggering real-time alerts for swift responses to unauthorized access. This comprehensive zone management approach prioritizes safety, efficiency, and security in diverse workplace scenarios."
-    },
-    "cardset3": {
-        "key": "emergency_signal",
-        "mediaCardPosition": "left",
-        "mediaCardType": "video",
-        "mediaCardSrc": "/videos/card3.mp4",
-        "textCardTitle": "Emergency Signal",
-        "textCardp1": "Worker Fallen Down",
-        "textCardp2": "We can  identify when a worker has fallen or is incapacitated in an industrial setting, enabling rapid response and potentially saving lives by reducing response time to emergencies."
-    },
-    "cardset4": {
-        "key": "monitors",
-        "mediaCardPosition": "right",
-        "mediaCardType": "image",
-        "mediaCardSrc": "/images/zone_management.jpg",
-        "textCardTitle": "SPARK, GAS AND DUST DETECTION",
-        "textCardp1": "Let AI-LENS help you to detect and respond to spark, dust, and gas hazards in real-time, enhancing safety and environmental monitoring",
-        "textCardp2": "AI-based spark, dust, and gas detection systems offer enhanced safety, accuracy, and efficiency in industrial settings, reducing risks and costs while improving overall operational performance.",
-        "textCardp3": "These systems are a crucial component of modern safety measures in industries where such hazards are prevalent."
+        "mediaCardSrc": [
+            "/images/pd1.jpeg",
+            "/images/pd2.jpeg",
+            "/images/pd3.jpeg",
+            "/images/pd5.jpeg",
+            "/images/pd6.jpeg"
+        ],
+        "textCardTitle": "WHAT DO WE DO?",
+        "textCardp1": "We use AI to provide VTON solutions to clothing retailers for their shoppers. Let your shoppers buy with confidence by visualizing outfits on them.",
+        "textCardp2": "Our technology allows customers to see how different clothes will look on various body types, enhancing their shopping experience and reducing return rates."
     },
     "about_us_title": "About",
     "about_us_subtitle": "Please reach us at aivision@ai-lens.ai to know us better!",
@@ -118,57 +71,99 @@
         "errorTitle": "Uh - Oh!",
         "errorText": "We encountered some error while sending your thoughts, Try Again or mail us at aivision@ai-lens.ai"
     },
-    "selector": {
-        "person_images": [
-            "/images/w_image1.svg",
-            "/images/w_image2.svg",
-            "/images/w_image3.svg",
-            "/images/w_image4.svg",
-            "/images/w_image5.svg",
-            "/images/w_image1.svg",
-            "/images/w_image2.svg",
-            "/images/w_image3.svg",
-            "/images/w_image4.svg",
-            "/images/w_image5.svg"
-        ],
-        "dress_images": [
-            "/images/w_image1.svg",
-            "/images/w_image2.svg",
-            "/images/w_image3.svg",
-            "/images/w_image4.svg",
-            "/images/w_image5.svg",
-            "/images/w_image1.svg",
-            "/images/w_image2.svg",
-            "/images/w_image3.svg",
-            "/images/w_image4.svg",
-            "/images/w_image5.svg"
-        ],
-        "selected_image": {
-            "/images/w_image1.svg_/images/w_image1.svg": "/images/w_image5.svg",
-            "/images/w_image1.svg_/images/w_image2.svg": "/images/w_image4.svg",
-            "/images/w_image1.svg_/images/w_image3.svg": "/images/w_image3.svg",
-            "/images/w_image1.svg_/images/w_image4.svg": "/images/w_image2.svg",
-            "/images/w_image1.svg_/images/w_image5.svg": "/images/w_image1.svg",
-            "/images/w_image2.svg_/images/w_image1.svg": "/images/w_image5.svg",
-            "/images/w_image2.svg_/images.w_image2.svg": "/images/w_image4.svg",
-            "/images/w_image2.svg_/images/w_image3.svg": "/images/w_image3.svg",
-            "/images/w_image2.svg_/images/w_image4.svg": "/images/w_image2.svg",
-            "/images/w_image2.svg_/images/w_image5.svg": "/images/w_image1.svg",
-            "/images/w_image3.svg_/images/w_image1.svg": "/images/w_image5.svg",
-            "/images/w_image3.svg_/images/w_image2.svg": "/images/w_image4.svg",
-            "/images/w_image3.svg_/images/w_image3.svg": "/images/w_image3.svg",
-            "/images/w_image3.svg_/images/w_image4.svg": "/images/w_image2.svg",
-            "/images/w_image3.svg_/images/w_image5.svg": "/images/w_image1.svg",
-            "/images/w_image4.svg_/images/w_image1.svg": "/images/w_image5.svg",
-            "/images/w_image4.svg_/images/w_image2.svg": "/images/w_image4.svg",
-            "/images/w_image4.svg_/images/w_image3.svg": "/images/w_image3.svg",
-            "/images/w_image4.svg_/images/w_image4.svg": "/images/w_image2.svg",
-            "/images/w_image4.svg_/images/w_image5.svg": "/images/w_image1.svg",
-            "/images/w_image5.svg_/images/w_image1.svg": "/images/w_image5.svg",
-            "/images/w_image5.svg_/images/w_image2.svg": "/images/w_image4.svg",
-            "/images/w_image5.svg_/images/w_image3.svg": "/images/w_image3.svg",
-            "/images/w_image5.svg_/images/w_image4.svg": "/images/w_image2.svg",
-            "/images/w_image5.svg_/images/w_image5.svg": "/images/w_image1.svg"
+    "personDetails": [
+        {
+            "height": "152.34cm",
+            "weight": "72.8kg",
+            "dresses": [
+                "/images/w_image1.svg",
+                "/images/w_image3.svg",
+                "/images/w_image2.svg",
+                "/images/w_image5.svg"
+            ],
+            "image": "/images/w_image4.svg"
+        },
+        {
+            "height": "162.57cm",
+            "weight": "64.2kg",
+            "dresses": [
+                "/images/w_image5.svg",
+                "/images/w_image4.svg",
+                "/images/w_image2.svg",
+                "/images/w_image3.svg"
+            ],
+            "image": "/images/w_image1.svg"
+        },
+        {
+            "height": "135.21cm",
+            "weight": "57.4kg",
+            "dresses": [
+                "/images/w_image1.svg",
+                "/images/w_image2.svg",
+                "/images/w_image4.svg",
+                "/images/w_image3.svg"
+            ],
+            "image": "/images/w_image5.svg"
+        },
+        {
+            "height": "148.89cm",
+            "weight": "83.9kg",
+            "dresses": [
+                "/images/w_image3.svg",
+                "/images/w_image4.svg",
+                "/images/w_image1.svg",
+                "/images/w_image2.svg"
+            ],
+            "image": "/images/w_image5.svg"
+        },
+        {
+            "height": "160.45cm",
+            "weight": "59.6kg",
+            "dresses": [
+                "/images/w_image2.svg",
+                "/images/w_image5.svg",
+                "/images/w_image1.svg",
+                "/images/w_image3.svg"
+            ],
+            "image": "/images/w_image4.svg"
         }
+    ],
+    "selected_image": {
+        "/images/w_image1.svg_/images/w_image1.svg": "/images/w_image5.svg",
+        "/images/w_image1.svg_/images/w_image2.svg": "/images/w_image4.svg",
+        "/images/w_image1.svg_/images/w_image3.svg": "/images/w_image3.svg",
+        "/images/w_image1.svg_/images/w_image4.svg": "/images/w_image2.svg",
+        "/images/w_image1.svg_/images/w_image5.svg": "/images/w_image1.svg",
+        "/images/w_image2.svg_/images/w_image1.svg": "/images/w_image5.svg",
+        "/images/w_image2.svg_/images.w_image2.svg": "/images/w_image4.svg",
+        "/images/w_image2.svg_/images/w_image3.svg": "/images/w_image3.svg",
+        "/images/w_image2.svg_/images/w_image4.svg": "/images/w_image2.svg",
+        "/images/w_image2.svg_/images/w_image5.svg": "/images/w_image1.svg",
+        "/images/w_image3.svg_/images/w_image1.svg": "/images/w_image5.svg",
+        "/images/w_image3.svg_/images/w_image2.svg": "/images/w_image4.svg",
+        "/images/w_image3.svg_/images/w_image3.svg": "/images/w_image3.svg",
+        "/images/w_image3.svg_/images/w_image4.svg": "/images/w_image2.svg",
+        "/images/w_image3.svg_/images/w_image5.svg": "/images/w_image1.svg",
+        "/images/w_image4.svg_/images/w_image1.svg": "/images/w_image5.svg",
+        "/images/w_image4.svg_/images/w_image2.svg": "/images/w_image4.svg",
+        "/images/w_image4.svg_/images/w_image3.svg": "/images/w_image3.svg",
+        "/images/w_image4.svg_/images/w_image4.svg": "/images/w_image2.svg",
+        "/images/w_image4.svg_/images/w_image5.svg": "/images/w_image1.svg",
+        "/images/w_image5.svg_/images/w_image1.svg": "/images/w_image5.svg",
+        "/images/w_image5.svg_/images/w_image2.svg": "/images/w_image4.svg",
+        "/images/w_image5.svg_/images/w_image3.svg": "/images/w_image3.svg",
+        "/images/w_image5.svg_/images/w_image4.svg": "/images/w_image2.svg",
+        "/images/w_image5.svg_/images/w_image5.svg": "/images/w_image1.svg"
+    },
+    "why_vton": {
+        "title": "WHY VTON?",
+        "description": "VTON, or Virtual Try-On technology, offers numerous benefits that can significantly boost your business and enhance customer satisfaction. By allowing customers to virtually try on products from the comfort of their homes, VTON enhances the overall shopping experience and reduces the need for physical store visits.",
+        "bulletPoints": [
+            "Increased Sale/Revenue",
+            "High Click Through Rate",
+            "Less Returns",
+            "Increases Buyer Confidence"
+        ],
+        "imageSrc": "https://via.placeholder.com/300"
     }
 }

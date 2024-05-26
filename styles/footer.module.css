@@ -8,7 +8,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 2rem;
+  padding: 4rem;
 }
 
 .menu {
@@ -44,72 +45,6 @@
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
-}
-
-.wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../images/wave.png);
-  background-size: 1000px 100px;
-}
-
-.wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWaves 7s linear infinite;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../images/wave.png);
-  background-size: 1000px 100px;
-}
-
-.wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animate 7s linear infinite !important;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../images/wave.png);
-  background-size: 1000px 100px;
-}
-
-.wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 15px;
-  animation: animateWaves 6s linear infinite;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../images/wave.png);
-  background-size: 1000px 100px;
-}
-
-.wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animate 6s linear infinite;
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../images/wave.png);
-  background-size: 1000px 100px;
 }
 
 .credits {
@@ -245,23 +180,6 @@
   background-size: contain;
 }
 
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
-}
 
 
 /* tablet */
