@@ -5,6 +5,7 @@
     border-radius: 10px; /* Rounded corners */
     padding: 10px 20px; /* Padding for the button */
     font-size: 24px; /* Font size */
+    font-weight: 600;
     cursor: pointer;
     outline: none; /* Remove default button outline */
     width: 250px; /* Increased width */
