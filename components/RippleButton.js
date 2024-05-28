@@ -31,7 +31,7 @@ const RippleButton = ({ initialText, newText, onClick }) => {
             className={`${styles.rippleButton} ${ripple ? styles.rippleEffect : ''}`}
             onClick={handleClick}
             onMouseEnter={handleEnter}
-            // onMouseLeave={handleRemove}
+            onMouseLeave={handleRemove}
             disabled={ripple}
         >
             {text}
