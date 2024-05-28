@@ -21,9 +21,8 @@
 }
 
 .title {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 3rem;
-    color: rgb(97, 96, 96);
 }
 
 .items {
@@ -62,7 +61,6 @@
 .listItem {
     font-size: 20px;
     font-weight: 600;
-    color: rgb(97, 96, 96);
     text-align: center;
 }
 
