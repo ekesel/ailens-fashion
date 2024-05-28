@@ -36,7 +36,7 @@
 
 .tryNow {
     display: flex;
-    justify-content:left;
+    justify-content:center;
     align-items: end;
     height: 100%;
 }
