@@ -34,6 +34,13 @@
     word-wrap: break-word; /* Ensure words wrap correctly */
 }
 
+.tryNow {
+    display: flex;
+    justify-content:left;
+    align-items: end;
+    height: 100%;
+}
+
 .imageSection {
     padding: 2rem;
     width: 60%;
@@ -134,12 +141,22 @@
 
     .container {
         flex-direction: column;
+        gap: 4rem;
     }
 
     .headLines {
         width: 100%;
         padding-right: 2rem;
+        padding-left: 2rem;
         height: 400px;
+    }
+
+    .firstRow {
+        min-height: 150px;
+    }
+
+    .secondRow {
+        min-height: 150px;
     }
 
     .imageSection {

@@ -8,6 +8,8 @@ import { useState, useEffect } from 'react';
 import FashionBanner from '../components/FashionBanner';
 import VirtualTryOn from '../components/VirtualTryOn';
 import TitleWithBulletPoints from '../components/TitleWithBulletPoints';
+import WhySection from '../components/WhySection';
+import WhatDo from '../components/WhatDo';
 
 
 export default function Home() {
@@ -36,14 +38,18 @@ export default function Home() {
       />
       <NavBar />
       <FashionBanner personDetails={data?.personDetails} interval={6000} />
-      <CardSet data={data?.cardset1} position={data?.cardset1?.mediaCardPosition} />
+      <WhatDo data={data?.cardset1} />
+      <WhySection title={data?.why_vton?.title}
+        description={data?.why_vton?.description}
+        bulletPoints={data?.why_vton?.bulletPoints}
+        imageSrcList={data?.why_vton?.imageList} />
       {/* <VirtualTryOn personDetails={data?.personDetails} selectedImage={data?.selected_image} /> */}
-      <TitleWithBulletPoints 
+      {/* <TitleWithBulletPoints
         title={data?.why_vton?.title}
         description={data?.why_vton?.description}
         bulletPoints={data?.why_vton?.bulletPoints}
         imageSrcList={data?.why_vton?.imageList}
-      />
+      /> */}
       <Footer contactData={data?.contact} socialMedia={data?.header?.socialMedia} />
     </div>
   );

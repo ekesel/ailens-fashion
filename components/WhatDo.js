@@ -1,21 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import styles from '../styles/whatdo.module.css';
 import AnimatedText from './AnimatedText';
 import MediaCard from './MediaCard';
 
 const WhatDo = (props) => {
     const [domLoaded, setDomLoaded] = useState(false);
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.5 });
 
-    useEffect(() => {
-        setDomLoaded(true);
-    }, []);
-
-    const cardVariants = {
-        offscreen: {
-            y: 300,
-            opacity: 0,
-        },
+    const sectionVariants = {
+        offscreen: { y: 300, opacity: 0 },
         onscreen: {
             y: 0,
             opacity: 1,
@@ -27,26 +22,38 @@ const WhatDo = (props) => {
         },
     };
 
+    useEffect(() => {
+        setDomLoaded(true);
+    }, []);
+
+    const spring = {
+        type: 'spring',
+        stiffness: 100,
+        damping: 10,
+    };
+
     return (
         <motion.div
+            ref={ref}
+            initial="offscreen"
+            animate={isInView ? "onscreen" : "offscreen"}
+            variants={sectionVariants}
             className={styles.section}
             key={props?.data?.key}
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
-            variants={cardVariants}
         >
             <div className={styles.container}>
                 <div className={styles.left}>
                     <div className={styles.header}>
-                        <span className={styles.title}><AnimatedText text={props?.data?.textCardTitle} /></span>
+                        <span className={styles.title}>
+                            {props?.data?.textCardTitle}
+                        </span>
                     </div>
                     <div className={styles.body}>
                         <p className={styles.desc}>
-                            <AnimatedText text={props?.data?.textCardp1} />
+                            {props?.data?.textCardp1}
                         </p>
                         <p className={styles.desc}>
-                            <AnimatedText text={props?.data?.textCardp2} />
+                            {props?.data?.textCardp2}
                         </p>
                     </div>
                 </div>
@@ -57,7 +64,7 @@ const WhatDo = (props) => {
                 </div>
             </div>
         </motion.div>
-    );
-};
+    )
+}
 
 export default WhatDo;

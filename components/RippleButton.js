@@ -16,10 +16,22 @@ const RippleButton = ({ initialText, newText, onClick }) => {
         }, 600); // Adjust the duration (600ms in this example)
     };
 
+    const handleEnter = () => {
+        setRipple(true);
+        setText(newText);
+    };
+
+    const handleRemove = () => {
+        setRipple(false);
+        setText(initialText);
+    };
+
     return (
         <button
             className={`${styles.rippleButton} ${ripple ? styles.rippleEffect : ''}`}
             onClick={handleClick}
+            onMouseEnter={handleEnter}
+            // onMouseLeave={handleRemove}
             disabled={ripple}
         >
             {text}

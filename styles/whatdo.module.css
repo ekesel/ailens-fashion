@@ -1,0 +1,53 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.left {
+    width: 30rem;
+}
+
+.header {
+    padding-bottom: 1rem;
+}
+
+.title {
+    letter-spacing: 0.025em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.desc {
+    font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    .section {
+        padding: 2rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {}
