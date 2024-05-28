@@ -1,53 +1,48 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/TitleWithBulletPoints.module.css';
 
-const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrc }) => {
-  const listRef = useRef([]);
+const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrcList }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    // Trigger animation after a short delay
+    const timeout = setTimeout(() => {
+      setAnimate(true);
+    }, 100); // Adjust the delay as needed
 
-    listRef.current.forEach(item => {
-      if (item) {
-        observer.observe(item);
-      }
-    });
+    // Cycle through images every 6 seconds
+    const interval = setInterval(() => {
+      setAnimate(false); // Reset animation
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageSrcList.length);
+      setTimeout(() => {
+        setAnimate(true); // Trigger animation after changing image
+      }, 100); // Adjust the delay as needed
+    }, 6000); // 6 seconds
 
     return () => {
-      listRef.current.forEach(item => {
-        if (item) {
-          observer.unobserve(item);
-        }
-      });
+      clearTimeout(timeout);
+      clearInterval(interval);
     };
-  }, []);
+  }, [currentImageIndex, imageSrcList]);
 
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.otherDetails}>
-        <img src={imageSrc} alt={title} className={styles.image} />
-        <ul className={styles.list}>
-          {bulletPoints.map((point, index) => (
-            <li
-              key={index}
-              className={styles.listItem}
-              ref={el => listRef.current[index] = el}
-            >
-              {point}
-            </li>
-          ))}
-        </ul>
-        <p className={styles.description}>{description}</p>
+        <div className={styles.left}>
+          <img src={imageSrcList[currentImageIndex]} alt={title} className={styles.image} />
+        </div>
+        <div className={styles.right}>
+          <div className={styles.list}>
+            {bulletPoints.map((point, index) => (
+              <div key={index} className={`${styles.checkItem} ${animate ? styles.visible : ''}`}>
+                <span className={styles.checkIcon}></span>
+                <span className={styles.listItem}>{point}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

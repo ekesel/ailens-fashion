@@ -1,91 +1,120 @@
 .container {
-  margin: 20px;
-  padding: 20px;
+  padding: 30px;
   margin-inline: auto;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: start;
+  border-radius: 10px;
+  gap: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10rem;
 }
 
 .otherDetails {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   gap: 1rem;
 }
 
 .title {
-  font-size: 24px;
+  font-size: 3rem;
   margin-bottom: 15px;
+  font-weight: 800;
 }
 
-.description {
-  font-size: 14px;
-  margin-bottom: 20px;
-  width: 400px; /* Fixed width for description */
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
 }
 
 .image {
-  width: 300px; /* Fixed width for image */
+  width: 300px;
+  height: 300px !important;
   height: auto;
+  object-fit: contain;
+  overflow: hidden;
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
 }
 
-.list {
-  list-style-type: disc;
-  padding-left: 20px;
-  width: 200px; /* Fixed width for bullet points */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.listItem {
-  margin-bottom: 10px;
-  font-size: 18px;
+
+.checkItem {
+  display: flex;
+  gap: 1rem;
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.listItem.visible {
+.checkItem.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.checkIcon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  overflow: hidden;
+  align-self: center;
+  background: url(../images/icons/check.svg) no-repeat center;
+  background-size: contain;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
   .container {
-    align-items: center; /* Center items on smaller screens */
+    margin: 2rem;
   }
 
   .otherDetails {
     flex-direction: column;
   }
 
-  .description {
-    width: auto; /* Reset width for description */
+  .left {
+    width: unset;
   }
 
-  .image {
-    width: 100%; /* Make image responsive */
+  .right {
+    width: unset;
   }
 
-  .list {
-    width: auto; /* Reset width for bullet points */
+  .title {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .description {
-    font-size: 12px; /* Adjust font size for smaller screens */
+  .container {
+    margin: 2rem;
   }
 }

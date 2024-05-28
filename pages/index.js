@@ -42,7 +42,7 @@ export default function Home() {
         title={data?.why_vton?.title}
         description={data?.why_vton?.description}
         bulletPoints={data?.why_vton?.bulletPoints}
-        imageSrc={data?.why_vton?.imageSrc}
+        imageSrcList={data?.why_vton?.imageList}
       />
       <Footer contactData={data?.contact} socialMedia={data?.header?.socialMedia} />
     </div>
