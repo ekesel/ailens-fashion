@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href={data?.favicon_path} />
       </Head>
       <Header title={data?.header?.title}
-        phone={data?.header?.phone}
+        email={data?.header?.email}
         location={data?.header?.location}
         socialMedia={data?.header?.socialMedia}
       />

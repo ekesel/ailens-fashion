@@ -16,7 +16,7 @@ const CardSet = ({ data, position }) => {
 
   // check mobile view
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
     if (mediaQuery.matches) {
       setIsMobileView(true)
     }
@@ -29,7 +29,7 @@ const CardSet = ({ data, position }) => {
       y: 300,
     },
     onscreen: {
-      y: isMobileView ? 200 : 50,
+      y: isMobileView ? 250 : 50,
       transition: {
         type: "spring",
         bounce: 0.4,

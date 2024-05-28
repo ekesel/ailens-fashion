@@ -14,12 +14,12 @@
 }
 
 .topHeader .telephone {
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1rem;
+    height: 1rem;
     display: block;
     overflow: hidden;
     align-self: center;
-    background: url(../images/icons/phone.png) no-repeat center;
+    background: url(../images/icons/email.png) no-repeat center;
     background-size: contain;
 }
 

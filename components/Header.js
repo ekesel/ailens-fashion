@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/header.module.css';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
 
-const Header = ({ title, phone, location, socialMedia }) => {
+const Header = ({ title, email, location, socialMedia }) => {
   return (
     <section className={styles.topHeader}>
       <div className={styles.container}>
@@ -11,7 +11,7 @@ const Header = ({ title, phone, location, socialMedia }) => {
           <div className={styles.rowItem}>
             <div className={styles.rowItemWrap}>
               <div className={styles.telephone}></div>
-              <span className={styles.mobileText}><AnimatedTextCharacter text={phone} staggerRate={0.03} delayRate={0.04} /></span>
+              <span className={styles.mobileText}><AnimatedTextCharacter text={email} staggerRate={0.03} delayRate={0.04} /></span>
             </div>
           </div>
           <div className={styles.rowItem}>

@@ -45,7 +45,7 @@ const AnimatedTextCharacter = ({ text, staggerRate, delayRate }) => {
   return (
     <motion.div
       key={text} // Ensure the key prop changes when text changes
-      style={{ overflow: "hidden", display: "flex" }}
+      style={{ overflow: "hidden", display: "flex", flexWrap: 'wrap' }}
       variants={container}
       initial="hidden"
       animate="visible"

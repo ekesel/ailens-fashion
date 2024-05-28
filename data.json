@@ -4,7 +4,7 @@
     "productLink": "https://main--leafy-pavlova-ce7173.netlify.app/",
     "header": {
         "title": "AI LENS",
-        "phone": "+1 818 731 7253",
+        "email": "aivision@ai-lens.ai",
         "location": "Bangalore, KA",
         "socialMedia": {
             "linkedIn": "https://www.linkedin.com/feed/",
@@ -81,7 +81,9 @@
                 "/images/w_image2.svg",
                 "/images/w_image5.svg"
             ],
-            "image": "/images/w_image4.svg"
+            "image": "/images/w_image4.svg",
+            "firstLine": "See it before you buy it.",
+            "secondLine": "Imagine yourself in the latest trends with our virtual try-on technology."
         },
         {
             "height": "162.57cm",
@@ -92,7 +94,9 @@
                 "/images/w_image2.svg",
                 "/images/w_image3.svg"
             ],
-            "image": "/images/w_image1.svg"
+            "image": "/images/w_image1.svg",
+            "firstLine": "Perfect fit, guaranteed.",
+            "secondLine": "Ensure every purchase looks and feels just right with personalized outfit visualizations."
         },
         {
             "height": "135.21cm",
@@ -103,7 +107,9 @@
                 "/images/w_image4.svg",
                 "/images/w_image3.svg"
             ],
-            "image": "/images/w_image5.svg"
+            "image": "/images/w_image5.svg",
+            "firstLine": "Revolutionize your shopping experience.",
+            "secondLine": "Transform your wardrobe with confidence, trying on clothes virtually before you decide."
         },
         {
             "height": "148.89cm",
@@ -114,7 +120,9 @@
                 "/images/w_image1.svg",
                 "/images/w_image2.svg"
             ],
-            "image": "/images/w_image5.svg"
+            "image": "/images/w_image5.svg",
+            "firstLine": "Shop smarter, not harder.",
+            "secondLine": "Discover how each piece fits your style and body effortlessly with our AI-powered VTON solution."
         },
         {
             "height": "160.45cm",
@@ -125,7 +133,9 @@
                 "/images/w_image1.svg",
                 "/images/w_image3.svg"
             ],
-            "image": "/images/w_image4.svg"
+            "image": "/images/w_image4.svg",
+            "firstLine": "Your virtual dressing room awaits.",
+            "secondLine": "Step into a new era of fashion with interactive, life-like outfit previews."
         }
     ],
     "selected_image": {

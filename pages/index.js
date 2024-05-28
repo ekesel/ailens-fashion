@@ -30,14 +30,14 @@ export default function Home() {
         <link rel="icon" href={data?.favicon_path} />
       </Head>
       <Header title={data?.header?.title}
-        phone={data?.header?.phone}
+        email={data?.header?.email}
         location={data?.header?.location}
         socialMedia={data?.header?.socialMedia}
       />
       <NavBar />
       <FashionBanner personDetails={data?.personDetails} interval={6000} />
       <CardSet data={data?.cardset1} position={data?.cardset1?.mediaCardPosition} />
-      <VirtualTryOn personDetails={data?.personDetails} selectedImage={data?.selected_image} />
+      {/* <VirtualTryOn personDetails={data?.personDetails} selectedImage={data?.selected_image} /> */}
       <TitleWithBulletPoints 
         title={data?.why_vton?.title}
         description={data?.why_vton?.description}
