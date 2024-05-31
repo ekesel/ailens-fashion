@@ -79,7 +79,8 @@
                 "/images/w_image1.svg",
                 "/images/w_image3.svg",
                 "/images/w_image2.svg",
-                "/images/w_image5.svg"
+                "/images/w_image5.svg",
+                "/images/w_image3.svg"
             ],
             "image": "/images/w_image4.svg",
             "firstLine": "See it before you buy it.",
@@ -92,6 +93,7 @@
                 "/images/w_image5.svg",
                 "/images/w_image4.svg",
                 "/images/w_image2.svg",
+                "/images/w_image3.svg",
                 "/images/w_image3.svg"
             ],
             "image": "/images/w_image1.svg",
@@ -105,6 +107,7 @@
                 "/images/w_image1.svg",
                 "/images/w_image2.svg",
                 "/images/w_image4.svg",
+                "/images/w_image3.svg",
                 "/images/w_image3.svg"
             ],
             "image": "/images/w_image5.svg",
@@ -118,7 +121,8 @@
                 "/images/w_image3.svg",
                 "/images/w_image4.svg",
                 "/images/w_image1.svg",
-                "/images/w_image2.svg"
+                "/images/w_image2.svg",
+                "/images/w_image3.svg"
             ],
             "image": "/images/w_image5.svg",
             "firstLine": "Shop smarter, not harder.",
@@ -131,6 +135,7 @@
                 "/images/w_image2.svg",
                 "/images/w_image5.svg",
                 "/images/w_image1.svg",
+                "/images/w_image3.svg",
                 "/images/w_image3.svg"
             ],
             "image": "/images/w_image4.svg",
@@ -166,7 +171,7 @@
         "/images/w_image5.svg_/images/w_image5.svg": "/images/w_image1.svg"
     },
     "why_vton": {
-        "title": "WHY VTON?",
+        "title": "Why Virtual Try On?",
         "description": "VTON, or Virtual Try-On technology, offers numerous benefits that can significantly boost your business and enhance customer satisfaction. By allowing customers to virtually try on products from the comfort of their homes, VTON enhances the overall shopping experience and reduces the need for physical store visits.",
         "bulletPoints": [
             "Increased Sale/Revenue",

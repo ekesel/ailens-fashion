@@ -10,6 +10,9 @@ const WhySection = (props) => {
                     <span className={styles.title}>
                         <AnimatedText text={props?.title} />
                     </span>
+                    <span className={styles.desc}>
+                        <AnimatedText text={props?.description} />
+                    </span>
                 </div>
                 <div className={styles.items}>
                     {props?.bulletPoints.map((point, index) => (

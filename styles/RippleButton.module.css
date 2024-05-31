@@ -1,20 +1,20 @@
 .rippleButton {
-    background-color: #cdb5ffbf; /* Tint of #cdb5ff */
+    background-color: black; /* Tint of #cdb5ff */
     color: white;
-    border: 2px solid #a690ff; /* Stylish border */
+    border: 2px solid black; /* Stylish border */
     border-radius: 10px; /* Rounded corners */
     padding: 10px 20px; /* Padding for the button */
-    font-size: 24px; /* Font size */
+    font-size: 30px; /* Font size */
     font-weight: 600;
     cursor: pointer;
     outline: none; /* Remove default button outline */
-    width: 250px; /* Increased width */
+    width: 300px; /* Increased width */
     transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
 }
 
 .rippleButton:hover {
-    background-color: #b39effbf; /* Lighter tint on hover */
-    border-color: #8a6eff; /* Darker border on hover */
+    background-color: rgb(16, 16, 16); /* Lighter tint on hover */
+    border-color: #0e0c1a; /* Darker border on hover */
 }
 
 /* Ripple effect animation */
@@ -27,7 +27,7 @@
     content: '';
     position: absolute;
     border-radius: 10%;
-    background-color: #ffffff55; /* Ripple effect color with transparency */
+    background-color: #06060655; /* Ripple effect color with transparency */
     width: 100%;
     height: 100%;
     top: 50%;

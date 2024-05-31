@@ -28,7 +28,7 @@ const Header = ({ title, email, location, socialMedia }) => {
             </div>
           </div>
         </div>
-        <div className={styles.iconRow}>
+        {/* <div className={styles.iconRow}>
           <div className={styles.iconRowItem}>
             <div className={styles.rowItemWrap}>
               <Link href={socialMedia?.linkedIn} rel="noopener noreferrer" target="_blank"><div className={styles.linkedIn}></div>
@@ -53,7 +53,7 @@ const Header = ({ title, email, location, socialMedia }) => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

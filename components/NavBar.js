@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Button
-} from "@nextui-org/react";
 import styles from '../styles/navbar.module.css';
 import Link from 'next/link';
 
