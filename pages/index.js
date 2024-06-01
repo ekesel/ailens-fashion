@@ -36,7 +36,6 @@ export default function Home() {
         location={data?.header?.location}
         socialMedia={data?.header?.socialMedia}
       />
-      <NavBar />
       <FashionBanner personDetails={data?.personDetails} interval={6000} />
       <WhatDo data={data?.cardset1} />
       <WhySection title={data?.why_vton?.title}

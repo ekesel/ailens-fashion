@@ -95,6 +95,12 @@
         height: 150px;
     }
 
+    .desc {
+        text-align:justify;
+        letter-spacing: unset;
+        font-size: 19px;
+    }
+
     .listItem {
         text-align: center;
     }
