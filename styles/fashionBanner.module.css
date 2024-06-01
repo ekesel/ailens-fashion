@@ -89,9 +89,10 @@
 }
 
 .dressImage {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     cursor: pointer;
+    object-fit: contain;
     transition: transform 0.6s;
     backface-visibility: hidden;
 }

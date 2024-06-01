@@ -21,11 +21,12 @@
         "mediaCardPosition": "right",
         "mediaCardType": "image",
         "mediaCardSrc": [
-            "/images/pd1.jpeg",
-            "/images/pd2.jpeg",
-            "/images/pd3.jpeg",
-            "/images/pd5.jpeg",
-            "/images/pd6.jpeg"
+            "/images/p5_dress1.png",
+            "/images/p5_dress2.png",
+            "/images/p5_dress3.png",
+            "/images/p5_dress4.png",
+            "/images/p5_dress5.png",
+            "/images/p5_dress6.png"
         ],
         "textCardTitle": "WHAT DO WE DO?",
         "textCardp1": "We use AI to provide VTON solutions to clothing retailers for their shoppers. Let your shoppers buy with confidence by visualizing outfits on them.",
@@ -76,13 +77,12 @@
             "height": "152.34cm",
             "weight": "72.8kg",
             "dresses": [
-                "/images/w_image1.svg",
-                "/images/w_image3.svg",
-                "/images/w_image2.svg",
-                "/images/w_image5.svg",
-                "/images/w_image3.svg"
+                "/images/p1_dress1.png",
+                "/images/p1_dress2.png",
+                "/images/p1_dress3.png",
+                "/images/p1_dress4.png"
             ],
-            "image": "/images/w_image4.svg",
+            "image": "/images/person1.png",
             "firstLine": "See it before you buy it.",
             "secondLine": "Imagine yourself in the latest trends with our virtual try-on technology."
         },
@@ -90,13 +90,12 @@
             "height": "162.57cm",
             "weight": "64.2kg",
             "dresses": [
-                "/images/w_image5.svg",
-                "/images/w_image4.svg",
-                "/images/w_image2.svg",
-                "/images/w_image3.svg",
-                "/images/w_image3.svg"
+                "/images/p2_dress1.png",
+                "/images/p2_dress2.png",
+                "/images/p2_dress3.png",
+                "/images/p2_dress4.png"
             ],
-            "image": "/images/w_image1.svg",
+            "image": "/images/person2.png",
             "firstLine": "Perfect fit, guaranteed.",
             "secondLine": "Ensure every purchase looks and feels just right with personalized outfit visualizations."
         },
@@ -104,13 +103,12 @@
             "height": "135.21cm",
             "weight": "57.4kg",
             "dresses": [
-                "/images/w_image1.svg",
-                "/images/w_image2.svg",
-                "/images/w_image4.svg",
-                "/images/w_image3.svg",
-                "/images/w_image3.svg"
+                "/images/p3_dress1.png",
+                "/images/p3_dress2.png",
+                "/images/p3_dress3.png",
+                "/images/p3_dress4.png"
             ],
-            "image": "/images/w_image5.svg",
+            "image": "/images/person3.png",
             "firstLine": "Revolutionize your shopping experience.",
             "secondLine": "Transform your wardrobe with confidence, trying on clothes virtually before you decide."
         },
@@ -118,29 +116,14 @@
             "height": "148.89cm",
             "weight": "83.9kg",
             "dresses": [
-                "/images/w_image3.svg",
-                "/images/w_image4.svg",
-                "/images/w_image1.svg",
-                "/images/w_image2.svg",
-                "/images/w_image3.svg"
+                "/images/p4_dress1.png",
+                "/images/p4_dress2.png",
+                "/images/p4_dress3.png",
+                "/images/p4_dress4.png"
             ],
-            "image": "/images/w_image5.svg",
+            "image": "/images/person4.png",
             "firstLine": "Shop smarter, not harder.",
             "secondLine": "Discover how each piece fits your style and body effortlessly with our AI-powered VTON solution."
-        },
-        {
-            "height": "160.45cm",
-            "weight": "59.6kg",
-            "dresses": [
-                "/images/w_image2.svg",
-                "/images/w_image5.svg",
-                "/images/w_image1.svg",
-                "/images/w_image3.svg",
-                "/images/w_image3.svg"
-            ],
-            "image": "/images/w_image4.svg",
-            "firstLine": "Your virtual dressing room awaits.",
-            "secondLine": "Step into a new era of fashion with interactive, life-like outfit previews."
         }
     ],
     "selected_image": {
