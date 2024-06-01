@@ -50,10 +50,19 @@
     }
     .container {
         flex-direction: column;
+        gap: 2rem;
     }
 
     .left {
         width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .right {
+        width: unset;
     }
 
 }

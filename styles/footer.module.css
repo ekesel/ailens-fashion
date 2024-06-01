@@ -198,4 +198,7 @@
     flex-wrap: unset;
     margin-left: -10%;
   }
+  .footer {
+    padding: 2rem;
+  }
 }
