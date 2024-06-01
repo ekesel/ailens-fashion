@@ -45,7 +45,7 @@ const AnimatedText = ({ text }) => {
                 // Set a timeout to append characters to the animatedText state
                 const timeout = setTimeout(() => {
                     setAnimatedText((prevText) => prevText + text[i]);
-                }, i * 50); // Reduce the delay to 50 milliseconds
+                }, i * 25); // Reduce the delay to 50 milliseconds
                 animationTimeouts.push(timeout);
             }
 
