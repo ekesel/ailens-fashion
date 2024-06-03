@@ -59,8 +59,6 @@ const mapping = {
 
 const DressImage = ({ imageUrl, className, isMobileView }) => {
 
-    console.log(imageUrl);
-
     return (
         <Image
             src={mapping[imageUrl]}
@@ -111,9 +109,6 @@ const FashionBanner = ({ personDetails, interval }) => {
     useEffect(() => {
         setCurrentPerson(personDetails[currentPersonIndex]);
     }, [currentPersonIndex, personDetails]);
-
-
-    console.log(mapping[currentPerson?.image]);
 
     return (
         <div className={styles.container}>
