@@ -146,16 +146,16 @@
         width: 100%;
         padding-right: 2rem;
         padding-left: 2rem;
-        height: 400px;
+        height: auto;
         padding-top: 2rem;
     }
 
     .firstRow {
-        min-height: 150px;
+        min-height: auto;
     }
 
     .secondRow {
-        min-height: 150px;
+        min-height: auto;
     }
 
     .imageSection {

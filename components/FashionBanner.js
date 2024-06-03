@@ -6,7 +6,8 @@ import RippleButton from './RippleButton';
 import Image from 'next/image'
 
 
-const DressImage = ({ imageUrl, className }) => {
+const DressImage = ({ imageUrl, className, isMobileView }) => {
+    let size = isMobileView ? '200px' : '420px';
 
     return (
         <Image
@@ -17,8 +18,8 @@ const DressImage = ({ imageUrl, className }) => {
             width={500}
             height={700}
             style={{
-                width: '420px',
-                height: '420px',
+                width: {size},
+                height: {size},
                 objectFit: 'cover'
             }}
         />
@@ -29,6 +30,17 @@ const FashionBanner = ({ personDetails, interval }) => {
     const [currentPersonIndex, setCurrentPersonIndex] = useState(0);
     const [currentPerson, setCurrentPerson] = useState(personDetails[0]);
     const [flip, setFlip] = useState(false);
+    const [isMobileView, setIsMobileView] = useState(false);
+
+    // check mobile view
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)')
+        if (mediaQuery.matches) {
+            setIsMobileView(true)
+        }
+        else
+            setIsMobileView(false)
+    }, [])
 
     useEffect(() => {
         const changePerson = () => {
@@ -94,7 +106,7 @@ const FashionBanner = ({ personDetails, interval }) => {
                 <div className={styles.dresses}>
                     {currentPerson?.dresses.map((dress, index) => (
                         <div className={styles.dress} key={`dress_${index}`}>
-                            <DressImage imageUrl={dress} className={`${styles.dressImage} ${flip ? styles['flip-exit'] : styles['flip-enter']}`} />
+                            <DressImage isMobileView={isMobileView} imageUrl={dress} className={`${styles.dressImage} ${flip ? styles['flip-exit'] : styles['flip-enter']}`} />
                         </div>
                     ))}
                 </div>
