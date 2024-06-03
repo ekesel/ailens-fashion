@@ -7,7 +7,6 @@ import Image from 'next/image'
 
 
 const DressImage = ({ imageUrl, className, isMobileView }) => {
-    let size = isMobileView ? '200px' : '420px';
 
     return (
         <Image
@@ -18,8 +17,8 @@ const DressImage = ({ imageUrl, className, isMobileView }) => {
             width={500}
             height={700}
             style={{
-                width: {size},
-                height: {size},
+                width: isMobileView ? "200px": "400px",
+                height: isMobileView ? "200px": "400px",
                 objectFit: 'cover'
             }}
         />
@@ -97,8 +96,8 @@ const FashionBanner = ({ personDetails, interval }) => {
                             width={500}
                             height={700}
                             style={{
-                                width: '270px',
-                                height: '270px'
+                                width: '200px',
+                                height: '200px'
                             }}
                         />
                     </div>
