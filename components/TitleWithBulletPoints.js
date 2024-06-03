@@ -35,7 +35,6 @@ const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrcList 
           <Image
             src={imageSrcList[currentImageIndex]}
             alt={title}
-            priority
             className={styles.image}
             width={500}
             height={700}

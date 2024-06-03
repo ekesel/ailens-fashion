@@ -12,7 +12,6 @@ const DressImage = ({ imageUrl, className, isMobileView }) => {
         <Image
             src={imageUrl}
             alt="dress_image"
-            priority
             className={className}
             width={500}
             height={700}
@@ -91,7 +90,6 @@ const FashionBanner = ({ personDetails, interval }) => {
                         <Image
                             src={currentPerson?.image}
                             alt="person_image"
-                            priority
                             className={`${styles.personImage} ${flip ? styles['flip-exit'] : styles['flip-enter']}`}
                             width={500}
                             height={700}

@@ -22,7 +22,6 @@ const WhySection = (props) => {
                                 <Image
                                     src={props?.imageSrcList?.[index]}
                                     alt={props?.title}
-                                    priority
                                     className={styles.image}
                                     width={500}
                                     height={700}
