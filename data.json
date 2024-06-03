@@ -1,9 +1,9 @@
 {
-    "page_title": "AI LENS",
+    "page_title": "AI-LENS",
     "favicon_path": "/favicon.ico",
     "productLink": "https://main--leafy-pavlova-ce7173.netlify.app/",
     "header": {
-        "title": "AI LENS",
+        "title": "AI-LENS",
         "email": "aivision@ai-lens.ai",
         "location": "Michigan, USA",
         "socialMedia": {
@@ -28,9 +28,11 @@
             "/images/p5_dress5.png",
             "/images/p5_dress6.png"
         ],
-        "textCardTitle": "WHAT DO WE DO?",
-        "textCardp1": "We use AI to provide VTON solutions to clothing retailers for their shoppers. Let your shoppers buy with confidence by visualizing outfits on them.",
-        "textCardp2": "Our technology allows customers to see how different clothes will look on various body types, enhancing their shopping experience and reducing return rates."
+        "textCardTitle": "WHAT DO WE DO AND HOW ?",
+        "textCardp1": "We are a team of AI Scientists and Machine Learning Engineers who have come together to build a clothing virtual try-on solution for online retailers to let their shoppers visualize themselves in different outfits in their true size.",
+        "textCardp2": "With just one picture uploaded by shoppers showing their face and entering their body measurement we generate realistic images of shoppers in various outfits as they shop through your online store.",
+        "textCardp3": "Unlike traditional avatar-based solutions, our technology generates true-to-life images, offering an unparalleled level of realism and accuracy as compared to avatar-based try-on solutions.",
+        "textCardp4": "We provide seamless integration into your existing platform and websites to provide this cutting edge virtual try-on experience to let your shoppers experience fashion like never before."
     },
     "about_us_title": "About",
     "about_us_subtitle": "Please reach us at aivision@ai-lens.ai to know us better!",
@@ -83,8 +85,8 @@
                 "/images/p1_dress4.png"
             ],
             "image": "/images/person1.png",
-            "firstLine": "See it before you buy it.",
-            "secondLine": "Imagine yourself in the latest trends with our virtual try-on technology."
+            "firstLine": "AI-DRIVEN REALISTIC VIRTUAL TRY-ON FOR CLOTHING",
+            "secondLine": "AI Powered solution to provide your shoppers a realistic clothing Virtual Try-On experience. Let your shoppers visualize your outfits in their true size for a personalized shopping experience."
         },
         {
             "height": "162.57cm",
@@ -96,8 +98,8 @@
                 "/images/p2_dress4.png"
             ],
             "image": "/images/person2.png",
-            "firstLine": "Perfect fit, guaranteed.",
-            "secondLine": "Ensure every purchase looks and feels just right with personalized outfit visualizations."
+            "firstLine": "JOIN AI-BASED FASHION REVOLUTION WITH US",
+            "secondLine": "Be part of an innovative shift in the fashion industry. Integrate with us today and step into the future of retail."
         },
         {
             "height": "135.21cm",
@@ -109,8 +111,8 @@
                 "/images/p3_dress4.png"
             ],
             "image": "/images/person3.png",
-            "firstLine": "Revolutionize your shopping experience.",
-            "secondLine": "Transform your wardrobe with confidence, trying on clothes virtually before you decide."
+            "firstLine": "SEAMLESS INTEGRATION WITH YOUR BUSINESS",
+            "secondLine": "We provide seamless integration into your online store to effortlessly blend with your current platform."
         },
         {
             "height": "148.89cm",
@@ -122,8 +124,8 @@
                 "/images/p4_dress4.png"
             ],
             "image": "/images/person4.png",
-            "firstLine": "Shop smarter, not harder.",
-            "secondLine": "Discover how each piece fits your style and body effortlessly with our AI-powered VTON solution."
+            "firstLine": "EASY TO USE FOR BUSINESS AND SHOPPERS",
+            "secondLine": "With just one photo uploaded by the user and their body measurements we provide stunningly accurate pictures of shoppers in outfits as they shop on your website."
         }
     ],
     "selected_image": {
@@ -154,19 +156,23 @@
         "/images/w_image5.svg_/images/w_image5.svg": "/images/w_image1.svg"
     },
     "why_vton": {
-        "title": "Why Virtual Try On?",
-        "description": "VTON, or Virtual Try-On technology, offers numerous benefits that can significantly boost your business and enhance customer satisfaction. By allowing customers to virtually try on products from the comfort of their homes, VTON enhances the overall shopping experience and reduces the need for physical store visits.",
+        "title": "WHY DO YOU NEED US ?",
+        "description": "Our AI based cutting edge virtual try-on solution revolutionizes customer engagement and click through rate by offering an interactive and personalized shopping experience. Boost your sales and revenue through increased conversion rates and reduced return rates. Gaining a competitive edge by staying ahead with cutting-edge AI solutions ensures that you are part of a fast-evolving and innovative fashion industry with Virtual Try-On, advanced data analytics, providing deep customer insights to tailor your offerings. Discover the future of fashion retail and transform the way your customers shop with us.",
         "bulletPoints": [
-            "Increased Sale/Revenue",
-            "High Click Through Rate",
-            "Almost No Returns",
-            "Increase Buy Confidence"
+            "Enhanced Customer Experience and Engagement",
+            "Increased Sales/Revenue",
+            "Reduced Return Rates",
+            "Increased Conversion Rates",
+            "Competitive Advantage",
+            "Data Analytics, personalization and Customer Insights"
         ],
         "imageList": [
-            "/images/increased_sale.png",
-            "/images/high_click.png",
-            "/images/less_returns.png",
-            "/images/buyer.png"
+            "/images/customer.png",
+            "/images/inreased_sale.png",
+            "/images/no_returns.png",
+            "/images/conversion.png",
+            "/images/competition.png",
+            "/images/data.png"
         ]
     }
 }

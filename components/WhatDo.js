@@ -55,6 +55,12 @@ const WhatDo = (props) => {
                         <p className={styles.desc}>
                             {props?.data?.textCardp2}
                         </p>
+                        <p className={styles.desc}>
+                            {props?.data?.textCardp3}
+                        </p>
+                        <p className={styles.desc}>
+                            {props?.data?.textCardp4}
+                        </p>
                     </div>
                 </div>
                 <div className={styles.right}>

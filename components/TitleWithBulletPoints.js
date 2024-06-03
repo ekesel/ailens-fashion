@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/TitleWithBulletPoints.module.css';
+import Image from 'next/image'
 
 const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrcList }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,7 +32,18 @@ const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrcList 
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.otherDetails}>
         <div className={styles.left}>
-          <img src={imageSrcList[currentImageIndex]} alt={title} className={styles.image} />
+          <Image
+            src={imageSrcList[currentImageIndex]}
+            alt={title}
+            priority
+            className={styles.image}
+            width={500}
+            height={700}
+            style={{
+              width: '300px',
+              height: '300px'
+            }}
+          />
         </div>
         <div className={styles.right}>
           <div className={styles.list}>

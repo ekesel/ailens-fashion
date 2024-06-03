@@ -60,8 +60,6 @@
 }
 
 .personImage {
-    width: 300px;
-    height: 300px;
     object-fit: contain;
     cursor: pointer;
     transition: transform 0.6s;
@@ -89,8 +87,6 @@
 }
 
 .dressImage {
-    width: 420px;
-    height: 420px;
     cursor: pointer;
     object-fit: contain;
     transition: transform 0.6s;

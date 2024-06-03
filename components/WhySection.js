@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/whysection.module.css';
 import AnimatedText from './AnimatedText';
+import Image from 'next/image'
 
 const WhySection = (props) => {
     return (
@@ -18,10 +19,21 @@ const WhySection = (props) => {
                     {props?.bulletPoints.map((point, index) => (
                         <div className={styles.item} key={index}>
                             <div className={styles.circle}>
-                                <img src={props?.imageSrcList?.[index]} alt={props?.title} className={styles.image} />
+                                <Image
+                                    src={props?.imageSrcList?.[index]}
+                                    alt={props?.title}
+                                    priority
+                                    className={styles.image}
+                                    width={500}
+                                    height={700}
+                                    style={{
+                                        width: '96px',
+                                        height: '96px'
+                                    }}
+                                />
                             </div>
                             <div>
-                                <span className={styles.listItem}><AnimatedText text={point} /></span>
+                                <span className={styles.listItem}>{point}</span>
                             </div>
                         </div>
                     ))}

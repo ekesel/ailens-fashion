@@ -134,7 +134,7 @@ const Footer = ({ contactData, socialMedia }) => {
                         </form>
                     </div>)}
                 <div className={styles.footerNavBar}>
-                    <div className={styles.iconRow}>
+                    {/* <div className={styles.iconRow}>
                         <div className={styles.iconRowItem}>
                             <div className={styles.rowItemWrap}>
                                 <Link href={socialMedia?.linkedIn} rel="noopener noreferrer" target="_blank"><div className={styles.linkedIn}></div>
@@ -159,8 +159,8 @@ const Footer = ({ contactData, socialMedia }) => {
                                 </Link>
                             </div>
                         </div>
-                    </div>
-                    <p className={styles.copyright}>&copy; 2024 AI Lens | All Rights Reserved</p>
+                    </div> */}
+                    <p className={styles.copyright}>&copy; 2024 AI-Lens | All Rights Reserved</p>
                     {/* <p className={styles.credits}>Site Developed By <Link href={'https://www.linkedin.com/in/ekesel/'} rel="noopener noreferrer" target="_blank">@ekesel</Link> and <Link href={'https://www.linkedin.com/in/aryanagr/'} rel="noopener noreferrer" target="_blank">@aryanagr</Link></p> */}
                 </div>
             </div>

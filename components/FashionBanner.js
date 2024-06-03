@@ -3,27 +3,24 @@ import styles from '../styles/fashionBanner.module.css';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
 import AnimatedText from './AnimatedText';
 import RippleButton from './RippleButton';
+import Image from 'next/image'
 
 
 const DressImage = ({ imageUrl, className }) => {
-    const [objectFit, setObjectFit] = useState('cover'); // Default object-fit value
-
-    useEffect(() => {
-        // Fetch image metadata asynchronously on the client-side
-        const img = new Image();
-        img.src = imageUrl;
-        img.onload = () => {
-            const aspectRatio = img.width / img.height;
-            const newObjectFit = aspectRatio < 0.5 ? 'contain' : 'cover';
-            setObjectFit(newObjectFit);
-        };
-    }, [imageUrl]);
 
     return (
-        <img
+        <Image
             src={imageUrl}
-            style={{ objectFit }}
+            alt="dress_image"
+            priority
             className={className}
+            width={500}
+            height={700}
+            style={{
+                width: '420px',
+                height: '420px',
+                objectFit: 'cover'
+            }}
         />
     );
 };
@@ -71,18 +68,26 @@ const FashionBanner = ({ personDetails, interval }) => {
             </div>
             <div className={styles.imageSection}>
                 <div className={styles.personRow}>
-                    <div className={styles.metrics}>
+                    {/* <div className={styles.metrics}>
                         <div className={styles.height}>
                             <AnimatedTextCharacter text={currentPerson?.height} staggerRate={0.2} delayRate={0.23} />
                         </div>
                         <div className={styles.weight}>
                             <AnimatedTextCharacter text={currentPerson?.weight} staggerRate={0.2} delayRate={0.23} />
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.person}>
-                        <img
+                        <Image
                             src={currentPerson?.image}
+                            alt="person_image"
+                            priority
                             className={`${styles.personImage} ${flip ? styles['flip-exit'] : styles['flip-enter']}`}
+                            width={500}
+                            height={700}
+                            style={{
+                                width: '270px',
+                                height: '270px'
+                            }}
                         />
                     </div>
                 </div>
