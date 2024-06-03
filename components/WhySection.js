@@ -25,6 +25,7 @@ const WhySection = (props) => {
                                     className={styles.image}
                                     width={500}
                                     height={700}
+                                    priority
                                     style={{
                                         width: '96px',
                                         height: '96px'

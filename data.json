@@ -79,12 +79,12 @@
             "height": "152.34cm",
             "weight": "72.8kg",
             "dresses": [
-                "/images/p1_dress1.png",
-                "/images/p1_dress2.png",
-                "/images/p1_dress3.png",
-                "/images/p1_dress4.png"
+                "p1_dress1",
+                "p1_dress2",
+                "p1_dress3",
+                "p1_dress4"
             ],
-            "image": "/images/person1.png",
+            "image": "person1",
             "firstLine": "AI-DRIVEN REALISTIC VIRTUAL TRY-ON FOR CLOTHING",
             "secondLine": "AI Powered solution to provide your shoppers a realistic clothing Virtual Try-On experience. Let your shoppers visualize your outfits in their true size for a personalized shopping experience."
         },
@@ -92,12 +92,12 @@
             "height": "162.57cm",
             "weight": "64.2kg",
             "dresses": [
-                "/images/p2_dress1.png",
-                "/images/p2_dress2.png",
-                "/images/p2_dress3.png",
-                "/images/p2_dress4.png"
+                "p2_dress1",
+                "p2_dress2",
+                "p2_dress3",
+                "p2_dress4"
             ],
-            "image": "/images/person2.png",
+            "image": "person2",
             "firstLine": "JOIN AI-BASED FASHION REVOLUTION WITH US",
             "secondLine": "Be part of an innovative shift in the fashion industry. Integrate with us today and step into the future of retail."
         },
@@ -105,12 +105,12 @@
             "height": "135.21cm",
             "weight": "57.4kg",
             "dresses": [
-                "/images/p3_dress1.png",
-                "/images/p3_dress2.png",
-                "/images/p3_dress3.png",
-                "/images/p3_dress4.png"
+                "p3_dress1",
+                "p3_dress2",
+                "p3_dress3",
+                "p3_dress4"
             ],
-            "image": "/images/person3.png",
+            "image": "person3",
             "firstLine": "SEAMLESS INTEGRATION WITH YOUR BUSINESS",
             "secondLine": "We provide seamless integration into your online store to effortlessly blend with your current platform."
         },
@@ -118,12 +118,12 @@
             "height": "148.89cm",
             "weight": "83.9kg",
             "dresses": [
-                "/images/p4_dress1.png",
-                "/images/p4_dress2.png",
-                "/images/p4_dress3.png",
-                "/images/p4_dress4.png"
+                "p4_dress1",
+                "p4_dress2",
+                "p4_dress3",
+                "p4_dress4"
             ],
-            "image": "/images/person4.png",
+            "image": "person4",
             "firstLine": "EASY TO USE FOR BUSINESS AND SHOPPERS",
             "secondLine": "With just one photo uploaded by the user and their body measurements we provide stunningly accurate pictures of shoppers in outfits as they shop on your website."
         }

@@ -38,6 +38,7 @@ const TitleWithBulletPoints = ({ title, description, bulletPoints, imageSrcList 
             className={styles.image}
             width={500}
             height={700}
+            priority
             style={{
               width: '300px',
               height: '300px'
