@@ -10,7 +10,7 @@ const WhatDo = (props) => {
     const isInView = useInView(ref, { once: true, amount: 0.5 });
 
     const sectionVariants = {
-        offscreen: { y: 300, opacity: 0 },
+        offscreen: { y: 100, opacity: 0 },
         onscreen: {
             y: 0,
             opacity: 1,

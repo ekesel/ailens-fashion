@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import Header from '../components/Header';
-import NavBar from '../components/NavBar';
-import CardSet from '../components/CardSet';
 import data from '../data.json';
 import Footer from '../components/Footer';
 import { useState, useEffect } from 'react';
 import FashionBanner from '../components/FashionBanner';
-import VirtualTryOn from '../components/VirtualTryOn';
-import TitleWithBulletPoints from '../components/TitleWithBulletPoints';
 import WhySection from '../components/WhySection';
 import WhatDo from '../components/WhatDo';
 

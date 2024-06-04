@@ -114,10 +114,10 @@ const FashionBanner = ({ personDetails, interval }) => {
         <div className={styles.container}>
             <div className={styles.headLines}>
                 <div className={styles.firstRow}>
-                    <AnimatedText text={currentPerson?.firstLine} />
+                    {currentPerson?.firstLine}
                 </div>
                 <div className={styles.secondRow}>
-                    <AnimatedText text={currentPerson?.secondLine} />
+                    {currentPerson?.secondLine}
                 </div>
                 <div className={styles.tryNow}>
                     <RippleButton
