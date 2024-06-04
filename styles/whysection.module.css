@@ -101,6 +101,7 @@
 
     .listItem {
         text-align: center;
+        height: unset;
     }
 }
 
