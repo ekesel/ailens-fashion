@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import FashionBanner from '../components/FashionBanner';
 import WhySection from '../components/WhySection';
 import WhatDo from '../components/WhatDo';
+import EthicalAI from '../components/EthicalAI';
 
 
 export default function Home() {
@@ -45,6 +46,7 @@ export default function Home() {
         bulletPoints={data?.why_vton?.bulletPoints}
         imageSrcList={data?.why_vton?.imageList}
       /> */}
+      <EthicalAI data={data?.ethical_ai} />
       <Footer contactData={data?.contact} socialMedia={data?.header?.socialMedia} />
     </div>
   );

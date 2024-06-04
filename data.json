@@ -59,7 +59,7 @@
     },
     "contact": {
         "key": "contact_form",
-        "title": "We welcome your questions & ideas",
+        "title": "Want to revolutionize your business with us? Schedule a demo and let us talk",
         "field1Name": "Name",
         "field1Placeholder": "Enter your Name",
         "field2Name": "Email",
@@ -173,6 +173,24 @@
             "/images/conversion.png",
             "/images/competition.png",
             "/images/data.png"
+        ]
+    },
+    "ethical_ai": {
+        "title": "Ethical AI Commitment",
+        "desc": "At AI-LENS, we prioritize ethical AI in our virtual try-on solutions",
+        "points": [
+            {
+                "title": "Privacy",
+                "desc": "Your and your shopper’s data is secure and used only with their consent. Our AI algorithms are designed to process data in a way that respects shopper’s confidentiality and privacy."
+            },
+            {
+                "title": "Fairness",
+                "desc": "Our technology is designed to be unbiased and inclusive for all users.Our virtual try-on technology is rigorously tested to ensure it works equally well for all users, regardless of their background, gender, or ethnicity."
+            },
+            {
+                "title": "Transparency",
+                "desc": "Transparency is key to building trust. We ensure clear communication about how our AI works."
+            }
         ]
     }
 }

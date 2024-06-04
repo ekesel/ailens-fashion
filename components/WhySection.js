@@ -9,10 +9,10 @@ const WhySection = (props) => {
             <div className={styles.container}>
                 <div className={styles.titleContainer}>
                     <span className={styles.title}>
-                        <AnimatedText text={props?.title} />
+                        {props?.title}
                     </span>
                     <span className={styles.desc}>
-                        <AnimatedText text={props?.description} />
+                        {props?.description}
                     </span>
                 </div>
                 <div className={styles.items}>

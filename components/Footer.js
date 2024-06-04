@@ -15,17 +15,17 @@ const Footer = ({ contactData, socialMedia }) => {
 
     const contactSubmit = () => {
         setLoading(true)
-        if(contactName && contactMsg && contactEmail) {
+        if (contactName && contactMsg && contactEmail) {
             emailjs.sendForm('service_yccr9l9', 'template_ylbxkou', form.current, 'Q5XUJuNrqxlaHUEEz')
-            .then((result) => {
-                setFormSubmitted(true)
-                setLoading(false)
-            }, (error) => {
-                setFormError(true);
-                setLoading(false)
-                console.log(error);
-            });
-        }  
+                .then((result) => {
+                    setFormSubmitted(true)
+                    setLoading(false)
+                }, (error) => {
+                    setFormError(true);
+                    setLoading(false)
+                    console.log(error);
+                });
+        }
         else {
             setFormError(true);
             setLoading(false)
@@ -132,37 +132,8 @@ const Footer = ({ contactData, socialMedia }) => {
                                 </button>
                             </div>
                         </form>
+                        <p className={styles.copyright}>&copy; 2024 AI-Lens | All Rights Reserved</p>
                     </div>)}
-                <div className={styles.footerNavBar}>
-                    {/* <div className={styles.iconRow}>
-                        <div className={styles.iconRowItem}>
-                            <div className={styles.rowItemWrap}>
-                                <Link href={socialMedia?.linkedIn} rel="noopener noreferrer" target="_blank"><div className={styles.linkedIn}></div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.iconRowItem}>
-                            <div className={styles.rowItemWrap}>
-                                <Link href={socialMedia?.twitter} rel="noopener noreferrer" target="_blank"><div className={styles.twitter}></div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.iconRowItem}>
-                            <div className={styles.rowItemWrap}>
-                                <Link href={socialMedia?.facebook} rel="noopener noreferrer" target="_blank"><div className={styles.facebook}></div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.iconRowItem}>
-                            <div className={styles.rowItemWrap}>
-                                <Link href={socialMedia?.instagram} rel="noopener noreferrer" target="_blank"><div className={styles.instagram}></div>
-                                </Link>
-                            </div>
-                        </div>
-                    </div> */}
-                    <p className={styles.copyright}>&copy; 2024 AI-Lens | All Rights Reserved</p>
-                    {/* <p className={styles.credits}>Site Developed By <Link href={'https://www.linkedin.com/in/ekesel/'} rel="noopener noreferrer" target="_blank">@ekesel</Link> and <Link href={'https://www.linkedin.com/in/aryanagr/'} rel="noopener noreferrer" target="_blank">@aryanagr</Link></p> */}
-                </div>
             </div>
         </footer>
     )

@@ -7,10 +7,10 @@ import MediaCard from './MediaCard';
 const WhatDo = (props) => {
     const [domLoaded, setDomLoaded] = useState(false);
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const isInView = useInView(ref, { once: true, amount: 0.1 });
 
     const sectionVariants = {
-        offscreen: { y: 100, opacity: 0 },
+        offscreen: { y: 25, opacity: 0 },
         onscreen: {
             y: 0,
             opacity: 1,
