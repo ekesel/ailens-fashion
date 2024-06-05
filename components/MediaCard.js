@@ -35,7 +35,7 @@ const MediaCard = ({ type, images, position }) => {
       }, 1000); // Match the duration of the morph animation
     };
   
-    const intervalId = setInterval(changePerson, 4000);
+    const intervalId = setInterval(changePerson, 3000);
   
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, [currentPersonIndex]);

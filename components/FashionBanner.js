@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/fashionBanner.module.css';
-import AnimatedTextCharacter from './AnimatedTextCharacter';
-import AnimatedText from './AnimatedText';
+import AnimatedTextWord from './AnimatedTextWord';
 import RippleButton from './RippleButton';
 import Image from 'next/image';
 // Static imports for person images
@@ -68,8 +67,8 @@ const DressImage = ({ imageUrl, className, isMobileView }) => {
             height={700}
             priority
             style={{
-                width: isMobileView ? "200px": "400px",
-                height: isMobileView ? "200px": "400px",
+                width: isMobileView ? "200px" : "400px",
+                height: isMobileView ? "200px" : "400px",
                 objectFit: 'cover'
             }}
         />
@@ -112,7 +111,7 @@ const FashionBanner = ({ personDetails, interval }) => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.headLines}>
+            <div className={`${styles.headLines} ${flip ? '' : styles['flip-enter']}`}>
                 <div className={styles.firstRow}>
                     {currentPerson?.firstLine}
                 </div>
