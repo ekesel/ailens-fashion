@@ -19,22 +19,32 @@
 .mediaWrap {
     border: 1px none;
     border-radius: 2rem;
-}
-
-.morphContainer {
-    width: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     height: 600px;
     position: relative;
 }
 
-.currentImage, .nextImage {
+.morphContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.currentImage,
+.nextImage {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-size: contain;
-    background-position: center;
+    bottom: 0;
+    background-size: cover;
+    /* Ensures the image maintains its aspect ratio */
+    background-position: bottom;
+    /* Aligns the image to the bottom */
+    background-repeat: no-repeat;
     transition: opacity 1s ease;
 }
 
@@ -157,6 +167,7 @@
         margin-left: 15%;
         margin-right: 15%;
     }
+
     .videoPlayer {
         width: 18rem !important;
     }
@@ -236,6 +247,7 @@
         display: flex;
         justify-content: center;
     }
+
     .videoPlayer {
         width: 18rem !important;
     }
@@ -243,7 +255,7 @@
     .centerTextCardContainer {
         width: unset;
         padding-left: 2rem;
-        padding-right: 2rem;  
+        padding-right: 2rem;
         margin-top: unset;
     }
 

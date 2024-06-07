@@ -111,7 +111,7 @@ const FashionBanner = ({ personDetails, interval }) => {
 
     return (
         <div className={styles.container}>
-            <div className={`${styles.headLines} ${flip ? '' : styles['flip-enter']}`}>
+            <div className={`${styles.headLines} ${flip ? styles['flip-exit'] : styles['flip-enter']}`}>
                 <div className={styles.firstRow}>
                     {currentPerson?.firstLine}
                 </div>
@@ -145,8 +145,9 @@ const FashionBanner = ({ personDetails, interval }) => {
                             height={700}
                             priority
                             style={{
-                                width: '200px',
-                                height: '200px'
+                                width: '250px',
+                                height: '200px',
+                                objectFit: 'contain'
                             }}
                         />
                     </div>
