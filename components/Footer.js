@@ -16,7 +16,7 @@ const Footer = ({ contactData, socialMedia }) => {
     const contactSubmit = () => {
         setLoading(true)
         if (contactName && contactMsg && contactEmail) {
-            emailjs.sendForm('service_yccr9l9', 'template_ylbxkou', form.current, 'Q5XUJuNrqxlaHUEEz')
+            emailjs.sendForm(process.env.EMAIL_SERVICE, 'template_ylbxkou', form.current, process.env.EMAIL_KEY)
                 .then((result) => {
                     setFormSubmitted(true)
                     setLoading(false)
