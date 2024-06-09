@@ -127,14 +127,6 @@ const FashionBanner = ({ personDetails, interval }) => {
             </div>
             <div className={styles.imageSection}>
                 <div className={styles.personRow}>
-                    {/* <div className={styles.metrics}>
-                        <div className={styles.height}>
-                            <AnimatedTextCharacter text={currentPerson?.height} staggerRate={0.2} delayRate={0.23} />
-                        </div>
-                        <div className={styles.weight}>
-                            <AnimatedTextCharacter text={currentPerson?.weight} staggerRate={0.2} delayRate={0.23} />
-                        </div>
-                    </div> */}
                     <div className={styles.person}>
                         <Image
                             src={mapping[currentPerson?.image]}

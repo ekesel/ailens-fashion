@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/whysection.module.css';
-import AnimatedText from './AnimatedText';
 import Image from 'next/image'
 
 const WhySection = (props) => {

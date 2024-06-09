@@ -1,5 +1,4 @@
 import styles from '../styles/footer.module.css';
-import Link from 'next/link';
 import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
