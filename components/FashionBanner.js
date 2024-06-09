@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/fashionBanner.module.css';
-import AnimatedTextWord from './AnimatedTextWord';
 import RippleButton from './RippleButton';
 import Image from 'next/image';
 // Static imports for person images

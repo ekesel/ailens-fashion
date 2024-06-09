@@ -25,7 +25,6 @@ const VideoPlayer = ({ videosrc }) => {
                 url={videosrc}
                 controls={false}
                 light={false}
-                loop
                 muted
                 playsInline
                 playing

@@ -26,21 +26,21 @@ const EthicalAI = ({ data }) => {
       </div>
       <div className={styles.container}>
         <div className={styles.left}>
-          {!isMobileView && <Image src={ethicalGirl1} width={600} height={600} />}
+          {!isMobileView && <Image src={ethicalGirl1} width={600} height={600} alt='ethical_ai_1' />}
         </div>
         <div className={styles.center}>
-          {isMobileView && <Image src={ethicalGirl1} width={600} height={600} />}
+          {isMobileView && <Image src={ethicalGirl1} width={600} height={600}  alt='ethical_ai_2'/>}
           {data?.points.map((point, index) => (
             <div className={styles.elementBox}>
               <div className={styles.element}>
-                <Image src={checkbox} width={25} height={25} />
+                <Image src={checkbox} width={25} height={25} alt={`checkbox_${index}`} />
                 <span className={styles.elementTitle}>{point?.title}</span>
               </div>
               <span className={styles.elementDesc}>{point?.desc}</span>
             </div>))}
         </div>
         <div className={styles.right}>
-          {!isMobileView && <Image src={ethicalGirl} width={600} height={600} />}
+          {!isMobileView && <Image src={ethicalGirl} width={600} height={600} alt='ethical_ai_3' />}
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import styles from '../styles/whatdo.module.css';
-import AnimatedText from './AnimatedText';
 import MediaCard from './MediaCard';
 
 const WhatDo = (props) => {

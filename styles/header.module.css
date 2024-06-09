@@ -5,7 +5,6 @@
 
 .topHeader .row {
     display: flex;
-    padding: 1rem 0 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -156,8 +155,7 @@
         margin-right: unset;
     }
     .topHeader .row {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1rem;
     }
     .mobileText {
         font-size: 0.7rem;
